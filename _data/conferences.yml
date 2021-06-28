@@ -7,15 +7,16 @@
   link: https://asplos-conference.org/
   deadline: "2021-08-13 23:59"
   place: Lausanne, Switzerland
-  tags: [SYS, OS, ARCH, PL]
+  tags: [OS, ARCH, PL]
 - name: NSDI
   description: USENIX Symposium on Networked Systems Design and Implementation
   year: 2022
   date: "April 4-6"
   note: two deadlines
+  timezone: "Etc/GMT+8"
   deadline: 
-    - "2021-03-04 20:59 Etc/GMT+8"
-    - "2021-09-09 20:59 Etc/GMT+8"
+    - "2021-03-04 20:59"
+    - "2021-09-09 20:59"
   place: Renton, Washington, USA
-  tags: [SYS, NET]
+  tags: [NET]
 
