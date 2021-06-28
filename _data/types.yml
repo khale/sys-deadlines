@@ -1,0 +1,15 @@
+---
+- name: Operating Systems
+  tag: OS
+- name: Parallel and Distributed Computing
+  tag: PAR
+- name: Computer Architecture
+  tag: ARCH
+- name: Intersection
+  tag: INT
+- name: Systems
+  tag: SYS
+- name: Programming Languages
+  tag: PL
+- name: Embedded Systems
+  tag: EMB
