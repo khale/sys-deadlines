@@ -11,3 +11,5 @@
   tag: EMB
 - name: Networking
   tag: NET
+- name: Storage
+  tag: STOR
