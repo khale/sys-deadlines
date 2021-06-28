@@ -5,8 +5,6 @@
   tag: PAR
 - name: Computer Architecture
   tag: ARCH
-- name: Intersection
-  tag: INT
 - name: Systems
   tag: SYS
 - name: Programming Languages

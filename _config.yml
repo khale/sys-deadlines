@@ -5,10 +5,10 @@ author: Kyle Hale
 domain: "khale.github.io"
 baseurl: "sys-deadlines"
 
-twitter_username: khale
+twitter_username: kylechale
 github_username: khale
 github_repo: sys-deadlines
-ga_id: UA-104921371-1
+#ga_id: UA-104921371-1
 
 markdown: kramdown
 
