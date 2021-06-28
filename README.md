@@ -1,6 +1,6 @@
 # Systems deadlines countdown
 
-Based on [ai-deadlines](https://aideadlin.es) by @abshkdz
+Based on [sec-deadlines](https://github.com/sec-deadlines) by @clementfunt and [ai-deadlines](https://aideadlin.es) by @abshkdz 
 
 ## Adding/updating a conference
 
@@ -13,14 +13,18 @@ Based on [ai-deadlines](https://aideadlin.es) by @abshkdz
 Example record:
 
 ```
-- name: Euro S&P
-  description: IEEE European Symposium on Security and Privacy
-  year: 2018
-  link: http://www.ieee-security.org/TC/EuroSP2018/
-  deadline: "2017-08-15 23:59"
-  date: April 24-26
-  place: London, UK
-  tags: [SEC, PRIV]
+- name: NSDI
+  description: USENIX Symposium on Networked Systems Design and Implementation
+  year: 2022
+  date: April 4-6
+  comment: two deadlines; first abstract deadline March 4, second is Sep 9
+  link: https://www.usenix.org/conference/nsdi22/call-for-papers
+  timezone: Etc/GMT+8
+  deadline: 
+    - "2021-03-10 20:59"
+    - "2021-09-15 20:59"
+  place: Renton, Washington, USA
+  tags: [NET]
 ```
 
 Descriptions of the fields:
