@@ -2,8 +2,8 @@ title: Systems Deadlines
 description: Countdowns to top Systems Deadlines
 author: Kyle Hale
 
-domain: "khale.github.io"
-baseurl: "sys-deadlines"
+domain: "khale.github.io/sys-deadlines"
+baseurl: ""
 
 twitter_username: kylechale
 github_username: khale
