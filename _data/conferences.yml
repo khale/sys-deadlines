@@ -3,8 +3,7 @@
 #
 
 - name: MASCOTS
-  description: IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer
-and Telecommunication Systems
+  description: IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
   place: Virtual
   year: 2021
   date: November 3-5
