@@ -38,7 +38,7 @@
   deadline: 
     - "2021-08-04 11:59"
     - "2021-10-20 11:59"
-    - "2021-02-02 11:59"
+    - "2022-02-02 11:59"
   comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
   link: https://www.sigmetrics.org/sigmetrics2022/call_for_papers.html
   tags: [OS, ARCH, PL, NET]
