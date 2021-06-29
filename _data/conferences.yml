@@ -41,3 +41,11 @@
   place: Lyon, France
   tags: [PAR]
 
+- name: HiPC
+  description: IEEE International Conference on High Performance Computing, Data, and Analytics
+  place: Bangalore, India
+  year: 2022
+  date: December 17-20
+  deadline: "2021-07-16 23:59"
+  tags: [PAR]
+
