@@ -75,5 +75,15 @@
   place: Lyon, France
   tags: [PAR]
 
+- name: OSDI 
+  description: USENIX Symposium on Operating Systems Design and Implementation
+  comment: abstract deadline December 7
+  year: 2022
+  date: July 11-13
+  deadline: "2021-12-14 23:59"
+  place: Carlsbad, CA, USA
+  link: https://www.usenix.org/conference/osdi22
+  tags: [OS]
+
 
 
