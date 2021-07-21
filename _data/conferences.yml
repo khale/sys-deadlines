@@ -9,7 +9,7 @@
   date: November 3-5
   link: http://mascots.iitis.pl/
   deadline: "2021-07-15 23:59"
-  tags: [OS, ARCH, PL, NET]
+  tags: [OS, ARCH, PL, NET, MEAS]
 
 - name: HiPC
   description: IEEE International Conference on High Performance Computing, Data, and Analytics
@@ -71,7 +71,7 @@
     - "2022-02-02 11:59"
   comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
   link: https://www.sigmetrics.org/sigmetrics2022/call_for_papers.html
-  tags: [OS, ARCH, PL, NET]
+  tags: [OS, ARCH, PL, NET, MEAS]
 
 - name: NSDI
   description: USENIX Symposium on Networked Systems Design and Implementation
@@ -96,6 +96,16 @@
   place: Santa Clara, California, USA
   tags: [OS, STOR]
 
+- name: ICPE
+  description: ACM/SPEC International Conference on Performance Engineering
+  comment: abstract deadline September 30
+  year: 2022
+  date: April 9-13
+  deadline: "2021-10-07 23:59"
+  place: Beijing, China
+  link: https://icpe2022.spec.org/
+  tags: [PAR, MEAS]
+
 - name: IPDPS
   description: IEEE International Parallel and Distributed Processing Symposium
   comment: abstract deadline October 1
@@ -115,7 +125,5 @@
   place: Carlsbad, CA, USA
   link: https://www.usenix.org/conference/osdi22
   tags: [OS]
-
-
 
 
