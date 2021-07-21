@@ -29,6 +29,35 @@
   place: Lausanne, Switzerland
   tags: [OS, ARCH, PL]
 
+- name: LLVM-HPC
+  description: Workshop on the LLVM Compiler Infrastructure in HPC
+  year: 2021
+  date: "November 14"
+  link: https://llvm-hpc-2021-workshop.github.io/
+  deadline: "2021-08-20 23:59"
+  place: St. Louis, MO, USA
+  tags: [OS, PL, COMP]
+
+- name: ROSS
+  description: International Workshop on Runtime and Operating Systems for Supercomputers
+  year: 2021
+  comment: co-located with SC21
+  date: November 15
+  deadline: "2021-08-23 23:59"
+  place: St. Louis, MO, USA
+  link: https://www.mcs.anl.gov/events/workshops/ross/2021/
+  tags: [OS, PAR]
+
+- name: MCHPC
+  description: Workshop on Memory Centric High-Performance Computing
+  year: 2021
+  comment: co-located with SC21
+  date: November 14
+  deadline: "2021-08-31 23:59"
+  place: St. Louis, MO, USA
+  link: https://passlab.github.io/mchpc/mchpc2021/
+  tags: [OS, PAR, ARCH]
+
 - name: SIGMETRICS
   description: ACM SIGMETRICS/Performance
   date: June 6-10
@@ -86,25 +115,6 @@
   link: https://www.usenix.org/conference/osdi22
   tags: [OS]
 
-- name: ROSS
-  description: International Workshop on Runtime and Operating Systems for Supercomputers
-  year: 2021
-  comment: co-located with SC21
-  date: November 15
-  deadline: "2021-08-23 23:59"
-  place: St. Louis, MO, USA
-  link: https://www.mcs.anl.gov/events/workshops/ross/2021/
-  tags: [OS, PAR]
-
-- name: MCHPC
-  description: Workshop on Memory Centric High-Performance Computing
-  year: 2021
-  comment: co-located with SC21
-  date: November 14
-  deadline: "2021-08-31 23:59"
-  place: St. Louis, MO, USA
-  link: https://passlab.github.io/mchpc/mchpc2021/
-  tags: [OS, PAR, ARCH]
 
 
 
