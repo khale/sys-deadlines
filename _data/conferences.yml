@@ -97,8 +97,8 @@
   tags: [OS, STOR]
 
 - name: ICPE
-  description: ACM/SPEC International Conference on Performance Engineering
   deadline: "2021-10-07 23:59"
+  description: ACM/SPEC International Conference on Performance Engineering
   comment: abstract deadline September 30
   year: 2022
   place: Beijing, China
