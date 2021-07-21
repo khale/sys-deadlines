@@ -98,9 +98,9 @@
 
 - name: ICPE
   description: ACM/SPEC International Conference on Performance Engineering
-  comment: abstract deadline September 30
+  comment: "abstract deadline September 30"
   year: 2022
-  date: April 9-13
+  date: "April 9-13"
   deadline: "2021-10-07 23:59"
   place: Beijing, China
   link: https://icpe2022.spec.org/
