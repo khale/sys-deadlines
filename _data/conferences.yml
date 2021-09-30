@@ -71,7 +71,7 @@
     - "2022-02-02 11:59"
   comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
   link: https://www.sigmetrics.org/sigmetrics2022/call_for_papers.html
-  tags: [OS, ARCH, PL, NET, MEAS]
+  tags: [MEAS]
 
 - name: NSDI
   description: USENIX Symposium on Networked Systems Design and Implementation
@@ -125,5 +125,17 @@
   place: Carlsbad, CA, USA
   link: https://www.usenix.org/conference/osdi22
   tags: [OS]
+
+- name: ATC
+  description: USENIX Annual Technical Conference
+  comment: abstract deadline January 6 (co-located with OSDI)
+  year: 2022
+  date: July 11-13
+  timezone: Etc/UTC
+  deadline: "2022-01-6 23:59"
+  place: Carlsbad, CA, USA
+  link: https://www.usenix.org/conference/atc22
+  tags: [OS}
+
 
 
