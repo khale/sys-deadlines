@@ -86,6 +86,17 @@
   place: Renton, Washington, USA
   tags: [NET]
 
+- name: EuroSys
+  description: The European Conference on Computer Systems
+  comment: Abstracts due Oct. 1
+  year: 2022
+  date: April 5-8
+  place: Rennes, France
+  deadline: "2021-10-09 23:59"
+  link: https://2022.eurosys.org/
+  timezone: Etc/UTC
+  tags: [OS, DIS]
+
 - name: FAST
   description: USENIX Conference on File and Storage Technologies 
   year: 2022
