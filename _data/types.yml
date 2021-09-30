@@ -17,3 +17,7 @@
   tag: COMP
 - name: Measurement and Performance
   tag: MEAS
+- name: Cloud Computing
+  tag: CLOUD
+- name: Distributed Systems
+  tag: DIS

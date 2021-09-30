@@ -126,6 +126,16 @@
   link: https://www.usenix.org/conference/osdi22
   tags: [OS]
 
+- name: ICDCS
+  description: 42th IEEE International Conference on Distributed Computing Systems
+  comment: Deadline TBD
+  year: 2022
+  date: July 10-13
+  deadline: "2021-01-01 23:59"
+  place: Bologna, Italy
+  link: https://icdcs2022.icdcs.org/
+  tags: [CLOUD, OS, DIS]
+
 - name: ATC
   description: USENIX Annual Technical Conference
   comment: abstract deadline January 6 (co-located with OSDI)
@@ -136,6 +146,7 @@
   place: Carlsbad, CA, USA
   link: https://www.usenix.org/conference/atc22
   tags: [OS]
+
 
 
 
