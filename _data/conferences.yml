@@ -127,6 +127,16 @@
   link: https://www.ipdps.org/
   tags: [PAR]
 
+- name: ISCA
+  description: International Symposium on Computer Architecture
+  comment: abstracts November 16
+  year: 2022
+  date: June 11-15
+  deadline: "2021-11-23 23:59"
+  place: New York City, NY, USA
+  link: https://iscaconf.org/isca2022/
+  tags: [ARCH]
+
 - name: OSDI 
   description: USENIX Symposium on Operating Systems Design and Implementation
   comment: abstract deadline December 7
