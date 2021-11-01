@@ -137,6 +137,16 @@
   link: https://iscaconf.org/isca2022/
   tags: [ARCH]
 
+- name: CCGrid
+  description: The 22nd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  comment: Abstracts November 24
+  year: 2022
+  date: May 16-19
+  deadline: "2021-12-01 23:59"
+  place: Taormina (Messina), Italy
+  link: https://fcrlab.unime.it/ccgrid22/
+  tags: [PAR]
+
 - name: OSDI 
   description: USENIX Symposium on Operating Systems Design and Implementation
   comment: abstract deadline December 7
