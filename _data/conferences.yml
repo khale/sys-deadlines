@@ -157,16 +157,6 @@
   link: https://www.usenix.org/conference/osdi22
   tags: [OS]
 
-- name: ICDCS
-  description: 42th IEEE International Conference on Distributed Computing Systems
-  comment: Deadline TBD
-  year: 2022
-  date: July 10-13
-  deadline: "2021-01-01 23:59"
-  place: Bologna, Italy
-  link: https://icdcs2022.icdcs.org/
-  tags: [CLOUD, OS, DIS]
-
 - name: ATC
   description: USENIX Annual Technical Conference
   comment: abstract deadline January 6 (co-located with OSDI)
@@ -177,6 +167,63 @@
   place: Carlsbad, CA, USA
   link: https://www.usenix.org/conference/atc22
   tags: [OS]
+
+- name: ICDCS
+  description: 42th IEEE International Conference on Distributed Computing Systems
+  comment: abstract deadilne Jan 17
+  year: 2022
+  date: July 10-13
+  timezone: Etc/GMT+5
+  deadline: "2022-01-24 23:59"
+  place: Bologna, Italy
+  link: https://icdcs2022.icdcs.org/
+  tags: [CLOUD, OS, DIS]
+
+- name: HPDC
+  description: The 31st International ACM Symposium on High-Performance Parallel and Distributed Computing
+  comment: abstract deadline January 20
+  year: 2022
+  date: June 27-July 1
+  deadline: "2022-01-27 23:59"
+  place: Minneapolis, MN, USA
+  link: http://www.hpdc.org/2022/papers/call-for-papers/
+  tags: [HPC]
+
+
+- name: SIGCOMM
+  description: ACM SIGCOMM
+  comment: abstract deadline January 26
+  year: 2022
+  date: August 22-26
+  timezone: Etc/UTC
+  deadline: "2022-02-02 23:59"
+  place: Amsterdam, the Netherlands
+  link: https://conferences.sigcomm.org/sigcomm/2022/
+  tags: [NET]
+
+- name: SC
+  description: supercomputing
+  comment: abstract deadline March 25
+  year: 2022
+  date: November 13-18
+  deadline: "2022-04-01 23:59"
+  place: Dallas, TX, USA
+  link: https://sc22.supercomputing.org/all-dates-deadlines/
+  tags: [HPC]
+
+- name: ICPP 
+  description: The 51st International Conference on Parallel Processing
+  comment: abstracts due April 8
+  year: 2022
+  date: August 29-September 1
+  deadline: "2022-04-14 23:59"
+  place: Bordeaux, France
+  link: https://icpp22.gitlabpages.inria.fr/
+  tags: [HPC]
+
+
+
+
 
 
 
