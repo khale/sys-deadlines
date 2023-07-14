@@ -333,3 +333,12 @@
   link: https://www.usenix.org/conference/fast24/call-for-papers
   tags: [OS, STOR]
 
+- name: ISCA
+  description: International Symposium on Computer Architecture
+  date: June 29 - July 3
+  year: 2024
+  deadline: "2023-11-21 23:59"
+  comment: exact deadline tbd
+  place: Buenos Aires, Argentina
+  link: https://iscaconf.org/isca2024/
+  tags: [ARCH]
