@@ -231,6 +231,15 @@
   link: https://conf.researchr.org/home/ppopp-2024
   tags: [PL, PAR]
 
+- name: HiPC
+  description: 30th IEEE International Conference on High Performance Computing, Data, and Analytics
+  place: Goa, India
+  year: 2023
+  date: December 18-21
+  deadline: "2023-07-17 23:59"
+  link: https://hipc.org/call-for-papers/
+  tags: [HPC]
+
 - name: SIGMETRICS
   description: ACM SIGMETRICS/IFIP Performance 2024
   date: June 10-14
