@@ -279,6 +279,18 @@
   link: https://www.usenix.org/conference/nsdi24/call-for-papers
   tags: [NET]
 
+
+- name: HPCA
+  description: International Symposium on High-Performance Computer Architecture
+  year: 2024
+  date: March 2-6
+  timezone: Etc/GMT+7
+  deadline: 
+    - "2023-08-04 23:59"
+  link: https://www.hpca-conf.org/2024/submit/papers.php
+  tags: [ARCH]
+
+
 - name: EuroSys
   description: The European Conference on Computer Systems
   date: April 22-25
@@ -292,14 +304,6 @@
   link: https://2024.eurosys.org/cfp.html#pagetop
   tags: [OS, ARCH, NET]
 
-- name: HPCA
-  description: International Symposium on High-Performance Computer Architecture
-  year: 2024
-  date: March 2-6
-  timezone: Etc/GMT+7
-  deadline: "2023-08-04 23:59"
-  link: https://www.hpca-conf.org/2024/submit/papers.php
-  tags: [ARCH]
 
 - name: OSDI
   description: 18th USENIX Symposium on Operating Systems Design and Implementation
