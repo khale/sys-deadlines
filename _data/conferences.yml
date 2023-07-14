@@ -222,9 +222,76 @@
   tags: [HPC]
 
 
+- name: PPoPP
+  description: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2024
+  year: 2024
+  date: March 2-6
+  deadline: "2023-08-04 23:59"
+  place: Edinburgh, UK
+  link: https://conf.researchr.org/home/ppopp-2024
+  tags: [PL, PAR]
 
+- name: SIGMETRICS
+  description: ACM SIGMETRICS/IFIP Performance 2024
+  date: June 10-14
+  year: 2024
+  place: Venice, Italy
+  deadline: 
+    - "2023-08-09 11:59"
+    - "2023-10-11 11:59"
+    - "2024-01-01 11:59"
+  comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
+  link: https://www.sigmetrics.org/sigmetrics2024/call_for_papers.html
+  tags: [MEAS]
 
+- name: ASPLOS
+  description: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+  date: April 
+  year: 2024
+  place: San Diego, CA
+  deadline:
+    - "2023-04-20 11:59"
+    - "2023-08-10 11:59"
+    - "2023-11-30 11:59"
+  comment: three deadlines, spring, summer, fall
+  link: https://www.asplos-conference.org/asplos2024/cfp/
+  tags: [PL, OS, ARCH]
 
+- name: NSDI
+  description: 21st USENIX Symposium on Networked Systems Design and Implementation 
+  date: April 16-18
+  year: 2024
+  place: Santa Clara, CA
+  timezone: Etc/GMT+7
+  deadline:
+    - "2023-05-04 20:59"
+    - "2023-09-21 20:59"
+  comment: two deadlines, spring and fall
+  link: https://www.usenix.org/conference/nsdi24/call-for-papers
+  tags: [NET]
+
+- name: EuroSys
+  description: The European Conference on Computer Systems
+  date: April 22-25
+  year: 2024
+  place: Athens, Greece
+  timezone: Etc/GMT
+  deadline: 
+    - "2023-05-24 23:59"
+    - "2023-10-19 23:59"
+  comment: two deadlines, spring and fall
+  link: https://2024.eurosys.org/cfp.html#pagetop
+  tags: [OS, ARCH, NET]
+
+- name: OSDI
+  description: https://seedsecuritylabs.org/lab_env.html
+  date: July 10-12
+  year: 2024
+  timezone: Etc/GMT+4
+  place: Santa Clara, CA
+  deadline: "2023-12-07 17:59"
+  link: https://www.usenix.org/conference/osdi24/call-for-papers
+  tags: [OS]
 
 
 
