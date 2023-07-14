@@ -293,7 +293,7 @@
   tags: [OS, ARCH, NET]
 
 - name: HPCA
-  description:  International Symposium on High-Performance Computer Architecture
+  description: International Symposium on High-Performance Computer Architecture
   year: 2024
   date: March 2-6
   timezone: Etc/GMT+7
