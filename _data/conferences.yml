@@ -255,7 +255,7 @@
 
 - name: ASPLOS
   description: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
-  date: April 
+  date: April 27 - May 1
   year: 2024
   place: San Diego, CA
   deadline:
@@ -346,3 +346,13 @@
   place: Buenos Aires, Argentina
   link: https://iscaconf.org/isca2024/
   tags: [ARCH]
+
+- name: IPDPS
+  description: IEEE International Parallel and Distributed Processing Symposium
+  comment: abstract deadline Sep 28
+  year: 2024
+  date: May 27 - 31
+  deadline: "2023-10-03 23:59"
+  place: Lyon, France
+  link: https://www.ipdps.org/
+  tags: [PAR]
