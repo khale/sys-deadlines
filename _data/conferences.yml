@@ -334,6 +334,16 @@
   link: https://2024.eurosys.org/cfp.html#pagetop
   tags: [OS, ARCH, NET]
 
+- name: ISCA
+  description: International Symposium on Computer Architecture
+  date: June 29 - July 3
+  year: 2024
+  deadline: "2023-11-21 23:59"
+  comment: exact deadline tbd
+  place: Buenos Aires, Argentina
+  link: https://iscaconf.org/isca2024/
+  tags: [ARCH]
+
 - name: OSDI
   description: 18th USENIX Symposium on Operating Systems Design and Implementation
   date: July 10-12
@@ -344,13 +354,4 @@
   link: https://www.usenix.org/conference/osdi24/call-for-papers
   tags: [OS]
 
-- name: ISCA
-  description: International Symposium on Computer Architecture
-  date: June 29 - July 3
-  year: 2024
-  deadline: "2023-11-21 23:59"
-  comment: exact deadline tbd
-  place: Buenos Aires, Argentina
-  link: https://iscaconf.org/isca2024/
-  tags: [ARCH]
 
