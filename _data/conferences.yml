@@ -221,6 +221,16 @@
   link: https://icpp22.gitlabpages.inria.fr/
   tags: [HPC]
 
+- name: HPCA
+  description: International Symposium on High-Performance Computer Architecture
+  year: 2024
+  date: March 2-6
+  timezone: Etc/GMT+7
+  deadline: 
+    - "2023-08-04 23:59"
+  link: https://www.hpca-conf.org/2024/submit/papers.php
+  tags: [ARCH]
+
 
 - name: PPoPP
   description: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2024
@@ -266,6 +276,18 @@
   link: https://www.asplos-conference.org/asplos2024/cfp/
   tags: [PL, OS, ARCH]
 
+- name: CGO
+  description: IEEE/ACM International Symposium on Code Generation and Optimization
+  date: March 2-6
+  year: 2024
+  deadline: 
+    - "2023-05-19 23:59"
+    - "2023-09-01 23:59"
+  place: Edinburgh, UK
+  comment: two deadlines, summer, fall. Co-located with PPoPP and HPCA
+  link: https://conf.researchr.org/track/cgo-2024/cgo-2024-main-conference
+  tags: [COMP]
+
 - name: NSDI
   description: 21st USENIX Symposium on Networked Systems Design and Implementation 
   date: April 16-18
@@ -279,17 +301,25 @@
   link: https://www.usenix.org/conference/nsdi24/call-for-papers
   tags: [NET]
 
-
-- name: HPCA
-  description: International Symposium on High-Performance Computer Architecture
+- name: FAST
+  description: 22nd USENIX Conference on File and Storage Technologies
+  date: February 27-29
   year: 2024
-  date: March 2-6
   timezone: Etc/GMT+7
-  deadline: 
-    - "2023-08-04 23:59"
-  link: https://www.hpca-conf.org/2024/submit/papers.php
-  tags: [ARCH]
+  deadline: "2023-09-21 23:59"
+  place: Santa Clara, CA
+  link: https://www.usenix.org/conference/fast24/call-for-papers
+  tags: [OS, STOR]
 
+- name: IPDPS
+  description: IEEE International Parallel and Distributed Processing Symposium
+  comment: abstract deadline Sep 28
+  year: 2024
+  date: May 27 - 31
+  deadline: "2023-10-03 23:59"
+  place: Lyon, France
+  link: https://www.ipdps.org/
+  tags: [PAR]
 
 - name: EuroSys
   description: The European Conference on Computer Systems
@@ -304,7 +334,6 @@
   link: https://2024.eurosys.org/cfp.html#pagetop
   tags: [OS, ARCH, NET]
 
-
 - name: OSDI
   description: 18th USENIX Symposium on Operating Systems Design and Implementation
   date: July 10-12
@@ -314,28 +343,6 @@
   deadline: "2023-12-07 17:59"
   link: https://www.usenix.org/conference/osdi24/call-for-papers
   tags: [OS]
-
-- name: CGO
-  description: IEEE/ACM International Symposium on Code Generation and Optimization
-  date: March 2-6
-  year: 2024
-  deadline: 
-    - "2023-05-19 23:59"
-    - "2023-09-01 23:59"
-  place: Edinburgh, UK
-  comment: two deadlines, summer, fall. Co-located with PPoPP and HPCA
-  link: https://conf.researchr.org/track/cgo-2024/cgo-2024-main-conference
-  tags: [COMP]
-
-- name: FAST
-  description: 22nd USENIX Conference on File and Storage Technologies
-  date: February 27-29
-  year: 2024
-  timezone: Etc/GMT+7
-  deadline: "2023-09-21 23:59"
-  place: Santa Clara, CA
-  link: https://www.usenix.org/conference/fast24/call-for-papers
-  tags: [OS, STOR]
 
 - name: ISCA
   description: International Symposium on Computer Architecture
@@ -347,12 +354,3 @@
   link: https://iscaconf.org/isca2024/
   tags: [ARCH]
 
-- name: IPDPS
-  description: IEEE International Parallel and Distributed Processing Symposium
-  comment: abstract deadline Sep 28
-  year: 2024
-  date: May 27 - 31
-  deadline: "2023-10-03 23:59"
-  place: Lyon, France
-  link: https://www.ipdps.org/
-  tags: [PAR]
