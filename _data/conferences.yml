@@ -335,42 +335,42 @@
   tags: [OS, ARCH, NET]
 
 - name: PLDI
+  deadline: "2023-11-16 23:59"
   description: The 45th ACM SIGPLAN Conference on Programming Language Design and Implementation
   date: June 24-28
   year: 2024
   place: Copenhagen, Denmark
-  deadline: "2023-11-16 23:59"
   comment: no abstract deadline
   link: https://pldi24.sigplan.org/track/pldi-2024-papers
   tags: [PL]
 
 - name: ISCA
+  deadline: "2023-11-21 23:59"
   description: International Symposium on Computer Architecture
   date: June 29 - July 3
   year: 2024
-  deadline: "2023-11-21 23:59"
   comment: Abstract Nov. 14
   place: Buenos Aires, Argentina
   link: https://iscaconf.org/isca2024/
   tags: [ARCH]
 
 - name: OSDI
+  deadline: "2023-12-07 17:59"
   description: 18th USENIX Symposium on Operating Systems Design and Implementation
   date: July 10-12
   year: 2024
   timezone: Etc/GMT+4
   place: Santa Clara, CA, USA
-  deadline: "2023-12-07 17:59"
   link: https://www.usenix.org/conference/osdi24/call-for-papers
   tags: [OS]
 
 - name: USENIX ATC
+  deadline: "2024-01-16 23:59"
   description: The 2024 USENIX Annual Technical Conference
   date: July 10-12
   year: 2024
   timezone: Etc/GMT+4
   place: Santa Clara, CA, USA
-  deadline: "2024-01-16 23:59"
   link: https://www.usenix.org/conference/atc24/call-for-papers
   comment: abstract deadline is January 9
   tags: [OS, NET]
