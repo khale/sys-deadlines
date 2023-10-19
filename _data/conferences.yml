@@ -354,6 +354,18 @@
   link: https://iscaconf.org/isca2024/
   tags: [ARCH]
 
+- name: Middleware
+  year: 2024
+  date: December 2-6
+  description: 25th ACM/IFIP International Middleware Conference
+  deadline: 
+    - "2023-12-01 23:59"
+    - "2024-05-24 23:59"
+  comment: two deadlines, fall and spring
+  place: Hong Kong, China
+  link: https://middleware-conf.github.io/2024/
+  tags: [OS, NET]
+
 - name: OSDI
   deadline: "2023-12-07 17:59"
   description: 18th USENIX Symposium on Operating Systems Design and Implementation
