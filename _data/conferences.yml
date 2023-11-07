@@ -376,6 +376,15 @@
   link: https://www.usenix.org/conference/osdi24/call-for-papers
   tags: [OS]
 
+- name: ISPASS
+  deadline: "2023-12-15 23:59"
+  description: 2024 IEEE International Symposium on Performance Analysis of Systems and Software
+  date: May 5-7
+  year: 2024
+  place: Indianapolis, Indiana
+  link: https://ispass.org/ispass2024/
+  tags: [MEAS, ARCH]
+
 - name: USENIX ATC
   deadline: "2024-01-16 23:59"
   description: The 2024 USENIX Annual Technical Conference
@@ -387,5 +396,13 @@
   comment: abstract deadline is January 9
   tags: [OS, NET]
 
-
+- name: Euro-Par
+  description: 30th International European Conference on Parallel and Distributed Computing
+  date: August 26-30
+  year: 2024
+  place: Madrid, Spain
+  link: https://2024.euro-par.org/
+  comment: abstract deadline is March 5
+  deadline: "2024-03-25 23:59"
+  tags: [PAR]
 
