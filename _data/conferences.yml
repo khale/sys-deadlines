@@ -385,6 +385,15 @@
   link: https://ispass.org/ispass2024/
   tags: [MEAS, ARCH]
 
+- name: HPDC
+  deadline: "2024-01-25 23:59"
+  description: The 33rd International Symposium on High-Performance Parallel and Distributed Computing
+  date: June 3-7
+  year: 2024
+  place: Pisa, Italy
+  link: https://www.hpdc.org/2024/
+  tags: [PAR]
+
 - name: USENIX ATC
   deadline: "2024-01-16 23:59"
   description: The 2024 USENIX Annual Technical Conference
