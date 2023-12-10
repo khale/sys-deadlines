@@ -416,6 +416,7 @@
   tags: [PAR]
 
 - name: SC
+  description: International Conference for High Performance Computing, Networking, Storage and Analysis
   deadline: "2024-04-02 23:59"
   date: November 17-22
   year: 2024
