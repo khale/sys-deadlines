@@ -415,3 +415,12 @@
   deadline: "2024-03-25 23:59"
   tags: [PAR]
 
+- name: SC
+  deadline: "2024-04-02 23:59"
+  date: November 17-22
+  year: 2024
+  place: Atlanta, GA, USA
+  link: https://sc24.supercomputing.org/all-dates-deadlines/
+  comment: abstract deadline 3/26
+  tags: [PAR]
+
