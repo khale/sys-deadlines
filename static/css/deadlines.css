@@ -91,3 +91,53 @@ a:hover, a:focus {
 footer {
   margin-bottom: 2em;
 }
+
+/* ---- Filter controls ---- */
+.controls {
+  margin-top: 0.75em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 1em;
+}
+
+.controls #search-box {
+  max-width: 320px;
+  flex: 1 1 220px;
+}
+
+.controls-label {
+  color: #808080;
+  margin-right: 0.25em;
+}
+
+.win-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.hide-past-label {
+  font-weight: normal;
+  color: #555;
+  margin: 0;
+}
+
+/* ---- Urgency color-coding ---- */
+.conf.urgent { border-left: 3px solid #e74c3c; padding-left: 12px; }
+.conf.soon   { border-left: 3px solid #e67e22; padding-left: 12px; }
+.conf.later  { border-left: 3px solid #27ae60; padding-left: 12px; }
+
+.timer.urgent { color: #e74c3c; }
+.timer.soon   { color: #e67e22; }
+.timer.later  { color: #27ae60; }
+
+/* ---- Add to calendar ---- */
+.add-cal {
+  display: inline-block;
+  margin-top: 0.4em;
+  font-size: 0.85em;
+  color: #337ab7;
+  border-bottom: 1px dotted #337ab7;
+}
+.add-cal:hover { color: #23527c; }

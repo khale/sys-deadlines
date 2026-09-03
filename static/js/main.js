@@ -2,6 +2,7 @@
 ---
 $(function() {
   deadlineByConf = {};
+  var confDataById = {};
 
   {% for conf in site.data.conferences %}
   {% assign conf_id = conf.name | append: conf.year | slugify %}
@@ -9,6 +10,14 @@ $(function() {
   $('#{{ conf_id }} .timer').html("TBA");
   $('#{{ conf_id }} .deadline-time').html("TBA");
   deadlineByConf["{{ conf_id }}"] = null;
+  confDataById["{{ conf_id }}"] = {
+    id: "{{ conf_id }}",
+    name: {{ conf.name | jsonify }},
+    year: {{ conf.year | jsonify }},
+    link: {{ conf.link | jsonify }},
+    comment: {{ conf.comment | jsonify }},
+    deadline: null
+  };
 
   {% else %}
   var rawDeadlines = {{ conf.deadline | jsonify }} || [];
@@ -47,13 +56,20 @@ $(function() {
     }
   }
 
-  // check which deadline is closest
-  var confDeadline = parsedDeadlines[0];
+  // Pick the nearest UPCOMING deadline; if all have passed, use the most recent one.
+  // (Previously this seeded on the first list entry and could get stuck on a past date.)
   var today = moment();
-  for (var i = 1; i < parsedDeadlines.length; i++) {
-    deadlineCandidate = parsedDeadlines[i];
-    if ((today.diff(deadlineCandidate) < 0 && today.diff(deadlineCandidate) > today.diff(confDeadline))) {
-      confDeadline = deadlineCandidate;
+  var confDeadline = null;
+  for (var i = 0; i < parsedDeadlines.length; i++) {
+    var cand = parsedDeadlines[i];
+    if (cand.diff(today) >= 0 && (confDeadline === null || cand.isBefore(confDeadline))) {
+      confDeadline = cand;
+    }
+  }
+  if (confDeadline === null) {
+    for (var i = 0; i < parsedDeadlines.length; i++) {
+      var cand = parsedDeadlines[i];
+      if (confDeadline === null || cand.isAfter(confDeadline)) confDeadline = cand;
     }
   }
 
@@ -70,17 +86,84 @@ $(function() {
       }
     }
     $('#{{ conf_id }} .timer').countdown(confDeadline.toDate(), make_update_countdown_fn(confDeadline));
-    // check if date has passed, add 'past' class to it
+
+    // urgency classes for color-coding
+    var el = $('#{{ conf_id }}');
     if (moment() - confDeadline > 0) {
-      $('#{{ conf_id }}').addClass('past');
+      el.addClass('past');
+    } else {
+      var daysLeft = confDeadline.diff(moment(), 'days');
+      var cls = daysLeft <= 7 ? 'urgent' : (daysLeft <= 30 ? 'soon' : 'later');
+      el.addClass(cls);
+      $('#{{ conf_id }} .timer').addClass(cls);
+      $('#{{ conf_id }} .add-cal').show();
     }
     $('#{{ conf_id }} .deadline-time').html(confDeadline.local().format('D MMM YYYY, h:mm:ss a'));
     deadlineByConf["{{ conf_id }}"] = confDeadline;
+    confDataById["{{ conf_id }}"] = {
+      id: "{{ conf_id }}",
+      name: {{ conf.name | jsonify }},
+      year: {{ conf.year | jsonify }},
+      link: {{ conf.link | jsonify }},
+      comment: {{ conf.comment | jsonify }},
+      deadline: confDeadline
+    };
   }
   {% endif %}
   {% endfor %}
 
-  // Reorder list
+  // ---- Add-to-calendar (.ics) ----
+  function escICS(s) {
+    return String(s == null ? '' : s)
+      .replace(/\\/g, '\\\\').replace(/;/g, '\\;')
+      .replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+  }
+  function icsStamp(m) { return m.clone().utc().format('YYYYMMDDTHHmmss') + 'Z'; }
+  function buildICS(conf) {
+    var dt = conf.deadline;
+    var summary = conf.name + ' ' + conf.year + ' — paper deadline';
+    var descParts = [];
+    if (conf.comment) descParts.push(conf.comment);
+    if (conf.link) descParts.push(conf.link);
+    var lines = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0',
+      'PRODID:-//sys-deadlines//conference deadlines//EN',
+      'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      'UID:' + conf.id + '-' + icsStamp(dt) + '@sys-deadlines',
+      'DTSTAMP:' + icsStamp(moment()),
+      'DTSTART:' + icsStamp(dt),
+      'DTEND:' + icsStamp(dt.clone().add(30, 'minutes')),
+      'SUMMARY:' + escICS(summary),
+      'DESCRIPTION:' + escICS(descParts.join(' — '))
+    ];
+    if (conf.link) lines.push('URL:' + conf.link);
+    lines.push('BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-P7D',
+      'DESCRIPTION:' + escICS(summary + ' in one week'), 'END:VALARM');
+    lines.push('BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-P1D',
+      'DESCRIPTION:' + escICS(summary + ' tomorrow'), 'END:VALARM');
+    lines.push('END:VEVENT', 'END:VCALENDAR');
+    return lines.join('\r\n');
+  }
+  function downloadICS(conf) {
+    var blob = new Blob([buildICS(conf)], { type: 'text/calendar;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = (conf.name + conf.year).replace(/[^A-Za-z0-9]+/g, '') + '.ics';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+  }
+  $('.add-cal').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).closest('.conf').attr('id');
+    var conf = confDataById[id];
+    if (conf && conf.deadline) downloadICS(conf);
+  });
+
+  // Reorder list: upcoming (soonest first), then TBA, then past (most recent first)
   confs = $('.conf');
   confs.detach().sort(function(a, b) {
     var today = moment();
@@ -103,18 +186,19 @@ $(function() {
     if (b == null && diff1 < 0) {
       return -1;
     }
+    if (diff1 < 0 && diff2 < 0) {
+      return a < b ? -1 : 1;   // both upcoming: earlier deadline first
+    }
+    if (diff1 > 0 && diff2 > 0) {
+      return a > b ? -1 : 1;   // both past: most recently passed first
+    }
     if (diff1 < 0 && diff2 > 0) {
       return -1;
     }
     if (diff1 > 0 && diff2 < 0) {
       return +1;
     }
-    if (diff1 < 0 && diff2 < 0) {
-      return -1 ? diff1 < diff2 : +1;
-    }
-    if (diff1 > 0 && diff2 > 0) {
-      return -1 ? a < b : +1;
-    }
+    return 0;
   });
   $('.conf-container').append(confs);
 
@@ -126,29 +210,69 @@ $(function() {
     all_tags[i] = conf_type_data[i]['tag'];
     toggle_status[all_tags[i]] = false;
   }
+  // Restore saved filter state. Brand-new categories (not seen on the last
+  // visit) default to ON so newly-added conferences aren't silently hidden.
   var tags = store.get('{{ site.domain }}');
-  if (tags === undefined) {
-    tags = all_tags;
+  var known = store.get('{{ site.domain }}:known');
+  if (tags === undefined) { tags = all_tags.slice(); }
+  if (known === undefined) { known = []; }
+  for (var i = 0; i < all_tags.length; i++) {
+    if (known.indexOf(all_tags[i]) < 0 && tags.indexOf(all_tags[i]) < 0) {
+      tags.push(all_tags[i]);
+    }
   }
+  tags = tags.filter(function(t) { return all_tags.indexOf(t) >= 0; });
   for (var i = 0; i < tags.length; i++) {
     $('#' + tags[i] + '-checkbox').prop('checked', true);
     toggle_status[tags[i]] = true;
   }
   store.set('{{ site.domain }}', tags);
+  store.set('{{ site.domain }}:known', all_tags);
+
+  // ---- Filter state ----
+  var dayWindow = 0;   // 0 = any
+  var hidePast = false;
+  var searchTerm = '';
 
   function update_conf_list() {
-    confs.each(function(i, conf) {
-      var conf = $(conf);
-      var show = false;
-      for (var i = 0; i < all_tags.length; i++) {
-        if(conf.hasClass(all_tags[i])) {
-          show = show | toggle_status[all_tags[i]];
+    var now = moment();
+    confs.each(function(i, elem) {
+      var conf = $(elem);
+      var id = elem.id;
+
+      // tag filter
+      var tagShow = false;
+      for (var j = 0; j < all_tags.length; j++) {
+        if (conf.hasClass(all_tags[j])) {
+          tagShow = tagShow || toggle_status[all_tags[j]];
         }
       }
-      if (show) {
+
+      var dl = deadlineByConf[id];               // moment, or null for TBA
+      var isPast = dl ? (now - dl > 0) : false;
+      var daysLeft = dl ? dl.diff(now, 'days') : null;
+
+      // deadline-window filter (excludes TBA and past)
+      var windowShow = true;
+      if (dayWindow > 0) {
+        windowShow = (dl !== null && !isPast && daysLeft <= dayWindow);
+      }
+
+      // hide-passed filter (leaves TBA visible)
+      var pastShow = true;
+      if (hidePast && isPast) pastShow = false;
+
+      // text search
+      var searchShow = true;
+      if (searchTerm) {
+        var hay = (conf.attr('data-search') || '').toLowerCase();
+        searchShow = hay.indexOf(searchTerm) >= 0;
+      }
+
+      if (tagShow && windowShow && pastShow && searchShow) {
         conf.show();
       } else {
-        conf.hide()
+        conf.hide();
       }
     });
   }
@@ -170,6 +294,26 @@ $(function() {
         tags.splice(idx, 1);
     }
     store.set('{{ site.domain }}', tags);
+    update_conf_list();
+  });
+
+  // Search box
+  $('#search-box').on('input', function() {
+    searchTerm = $(this).val().trim().toLowerCase();
+    update_conf_list();
+  });
+
+  // Deadline-window buttons
+  $('.win-btn').on('click', function() {
+    $('.win-btn').removeClass('active');
+    $(this).addClass('active');
+    dayWindow = parseInt($(this).attr('data-days'), 10) || 0;
+    update_conf_list();
+  });
+
+  // Hide-passed toggle
+  $('#hide-past').on('change', function() {
+    hidePast = $(this).is(':checked');
     update_conf_list();
   });
 });
