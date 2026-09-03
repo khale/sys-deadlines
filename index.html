@@ -62,14 +62,14 @@
         {% for conf in site.data.conferences %}
         <div id="{{ conf.name | append: conf.year | slugify }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}" data-search="{{ conf.name | downcase }} {{ conf.description | downcase }} {{ conf.place | downcase }}">
           <div class="row">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-5">
                 <h2><a href="{{conf.link}}">{{conf.name}} {{conf.year}}</a></h2>
                 <div class="meta">
                   {{ conf.description }}<br>
                   {{conf.date | replace: '-', '–'}} {% if conf.place %}// <a href="http://maps.google.com/?q={{conf.place}}">{{conf.place}}</a>{% endif %}<br>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-4">
                 <span class="timer"></span>
                 <div class="deadline">
                   <div>Deadline:
@@ -80,6 +80,12 @@
                     <a href="#" class="add-cal" style="display:none">＋ Add to calendar</a>
                   </div>
                 </div>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                {% if conf.place and conf.place != "TBA" %}
+                <iframe class="conf-map" loading="lazy" frameborder="0" scrolling="no" title="Map of {{ conf.place }}"
+                  src="https://maps.google.com/maps?q={{ conf.place | url_encode }}&z=4&output=embed"></iframe>
+                {% endif %}
               </div>
           </div>
           <hr>
