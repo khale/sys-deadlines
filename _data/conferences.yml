@@ -1,427 +1,323 @@
 ---
-# Systems
+# Computer systems research conference deadlines
+# Last refreshed: 2026-09-03
+#
+# Format notes (see README.md):
+#   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
+#   - timezone omitted => AoE (Anywhere on Earth, UTC-12). tz sign is inverted (UTC-8 => Etc/GMT+8).
+#   - each entry leads with its nearest UPCOMING deadline; the weekly refresh prunes passed ones.
 #
 
-- name: MASCOTS
-  description: IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
-  place: Virtual
-  year: 2021
-  date: November 3-5
-  link: http://mascots.iitis.pl/
-  deadline: "2021-07-15 23:59"
-  tags: [OS, ARCH, PL, NET, MEAS]
-
-- name: HiPC
-  description: IEEE International Conference on High Performance Computing, Data, and Analytics
-  place: Bangalore, India
-  year: 2022
-  date: December 17-20
-  deadline: "2021-07-16 23:59"
-  link: https://hipc.org/call-for-papers/
-  tags: [PAR]
-
-- name: ASPLOS
-  description: International Conference on Architectural Support for Programming Languages and Operating Systems
-  year: 2022
-  date: "February 28 - March 4"
-  comment: Abstract registration August 6
-  link: https://asplos-conference.org/
-  deadline: "2021-08-13 23:59"
-  place: Lausanne, Switzerland
-  tags: [OS, ARCH, PL]
-
-- name: LLVM-HPC
-  description: Workshop on the LLVM Compiler Infrastructure in HPC
-  year: 2021
-  date: "November 14"
-  link: https://llvm-hpc-2021-workshop.github.io/
-  deadline: "2021-08-20 23:59"
-  place: St. Louis, MO, USA
-  tags: [OS, PL, COMP]
-
-- name: ROSS
-  description: International Workshop on Runtime and Operating Systems for Supercomputers
-  year: 2021
-  comment: co-located with SC21
-  date: November 15
-  deadline: "2021-08-23 23:59"
-  place: St. Louis, MO, USA
-  link: https://www.mcs.anl.gov/events/workshops/ross/2021/
-  tags: [OS, PAR]
-
-- name: MCHPC
-  description: Workshop on Memory Centric High-Performance Computing
-  year: 2021
-  comment: co-located with SC21
-  date: November 14
-  deadline: "2021-08-31 23:59"
-  place: St. Louis, MO, USA
-  link: https://passlab.github.io/mchpc/mchpc2021/
-  tags: [OS, PAR, ARCH]
-
-- name: SIGMETRICS
-  description: ACM SIGMETRICS/Performance
-  date: June 6-10
-  year: 2022
-  place: Mubai, India
-  timezone: Etc/GMT+5
-  deadline: 
-    - "2021-08-04 11:59"
-    - "2021-10-20 11:59"
-    - "2022-02-02 11:59"
-  comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
-  link: https://www.sigmetrics.org/sigmetrics2022/call_for_papers.html
-  tags: [MEAS]
-
-- name: NSDI
-  description: USENIX Symposium on Networked Systems Design and Implementation
-  year: 2022
-  date: April 4-6
-  comment: two deadlines; first abstract deadline March 4, second is Sep 9
-  link: https://www.usenix.org/conference/nsdi22/call-for-papers
-  timezone: Etc/GMT+8
-  deadline: 
-    - "2021-03-10 20:59"
-    - "2021-09-15 20:59"
-  place: Renton, Washington, USA
-  tags: [NET]
-
-- name: EuroSys
-  description: The European Conference on Computer Systems
-  comment: Abstracts due Oct. 1
-  year: 2022
-  date: April 5-8
-  place: Rennes, France
-  deadline: "2021-10-09 23:59"
-  link: https://2022.eurosys.org/
-  timezone: Etc/UTC
-  tags: [OS, DIS]
-
-- name: FAST
-  description: USENIX Conference on File and Storage Technologies 
-  year: 2022
-  date: February 21-24
-  timezone: Etc/GMT+8
-  link: https://www.usenix.org/conference/fast22/call-for-papers
-  deadline: "2021-09-23 23:59"
-  place: Santa Clara, California, USA
-  tags: [OS, STOR]
-
-- name: ICPE
-  deadline: "2021-10-07 23:59"
-  description: ACM/SPEC International Conference on Performance Engineering
-  comment: abstract deadline September 30
-  year: 2022
-  place: Beijing, China
-  date: April 9-13
-  link: https://icpe2022.spec.org/
-  tags: [PAR, MEAS]
-
-- name: IPDPS
-  description: IEEE International Parallel and Distributed Processing Symposium
-  comment: abstract deadline October 1
-  year: 2022
-  date: May 30 - June 3
-  deadline: "2021-10-08 23:59"
-  place: Lyon, France
-  link: https://www.ipdps.org/
-  tags: [PAR]
-
-- name: ISCA
-  description: International Symposium on Computer Architecture
-  comment: abstracts November 16
-  year: 2022
-  date: June 11-15
-  deadline: "2021-11-23 23:59"
-  place: New York City, NY, USA
-  link: https://iscaconf.org/isca2022/
-  tags: [ARCH]
-
-- name: CCGrid
-  description: The 22nd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
-  deadline: "2021-12-01 23:59"
-  comment: Abstracts due on November 24
-  year: 2022
-  date: May 16-19
-  place: Taormina (Messina), Italy
-  link: https://fcrlab.unime.it/ccgrid22/
-  tags: [PAR]
-
-- name: OSDI 
-  description: USENIX Symposium on Operating Systems Design and Implementation
-  comment: abstract deadline December 7
-  year: 2022
-  date: July 11-13
-  deadline: "2021-12-14 23:59"
-  place: Carlsbad, CA, USA
-  link: https://www.usenix.org/conference/osdi22
-  tags: [OS]
-
-- name: ATC
-  description: USENIX Annual Technical Conference
-  comment: abstract deadline January 6 (co-located with OSDI)
-  year: 2022
-  date: July 11-13
-  timezone: Etc/UTC
-  deadline: "2022-01-6 23:59"
-  place: Carlsbad, CA, USA
-  link: https://www.usenix.org/conference/atc22
-  tags: [OS]
-
-- name: ICDCS
-  description: 42th IEEE International Conference on Distributed Computing Systems
-  comment: abstract deadilne Jan 17
-  year: 2022
-  date: July 10-13
-  timezone: Etc/GMT+5
-  deadline: "2022-01-24 23:59"
-  place: Bologna, Italy
-  link: https://icdcs2022.icdcs.org/
-  tags: [CLOUD, OS, DIS]
-
-- name: HPDC
-  description: The 31st International ACM Symposium on High-Performance Parallel and Distributed Computing
-  comment: abstract deadline January 20
-  year: 2022
-  date: June 27-July 1
-  deadline: "2022-01-27 23:59"
-  place: Minneapolis, MN, USA
-  link: http://www.hpdc.org/2022/papers/call-for-papers/
-  tags: [HPC]
-
-
-- name: SIGCOMM
-  description: ACM SIGCOMM
-  comment: abstract deadline January 26
-  year: 2022
-  date: August 22-26
-  timezone: Etc/UTC
-  deadline: "2022-02-02 23:59"
-  place: Amsterdam, the Netherlands
-  link: https://conferences.sigcomm.org/sigcomm/2022/
-  tags: [NET]
-
-- name: SC
-  description: supercomputing
-  comment: abstract deadline March 25
-  year: 2022
-  date: November 13-18
-  deadline: "2022-04-01 23:59"
-  place: Dallas, TX, USA
-  link: https://sc22.supercomputing.org/all-dates-deadlines/
-  tags: [HPC]
-
-- name: ICPP 
-  description: The 51st International Conference on Parallel Processing
-  comment: abstracts due April 8
-  year: 2022
-  date: August 29-September 1
-  deadline: "2022-04-14 23:59"
-  place: Bordeaux, France
-  link: https://icpp22.gitlabpages.inria.fr/
-  tags: [HPC]
-
-- name: HPCA
-  description: International Symposium on High-Performance Computer Architecture
-  year: 2024
-  date: March 2-6
-  timezone: Etc/GMT+7
-  deadline: 
-    - "2023-08-04 23:59"
-  link: https://www.hpca-conf.org/2024/submit/papers.php
-  tags: [ARCH]
-
-
-- name: PPoPP
-  description: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 2024
-  year: 2024
-  date: March 2-6
-  deadline: "2023-08-04 23:59"
-  place: Edinburgh, UK
-  link: https://conf.researchr.org/home/ppopp-2024
-  tags: [PL, PAR]
-
-- name: HiPC
-  description: 30th IEEE International Conference on High Performance Computing, Data, and Analytics
-  place: Goa, India
-  year: 2023
-  date: December 18-21
-  deadline: "2023-07-17 23:59"
-  link: https://hipc.org/call-for-papers/
-  tags: [HPC]
-
-- name: SIGMETRICS
-  description: ACM SIGMETRICS/IFIP Performance 2024
-  date: June 10-14
-  year: 2024
-  place: Venice, Italy
-  deadline: 
-    - "2023-08-09 11:59"
-    - "2023-10-11 11:59"
-    - "2024-01-01 11:59"
-  comment: three deadlines, summer, fall winter. Abstract deadlines one week before.
-  link: https://www.sigmetrics.org/sigmetrics2024/call_for_papers.html
-  tags: [MEAS]
+# --- Confirmed upcoming deadlines ---
 
 - name: ASPLOS
   description: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
-  date: April 27 - May 1
-  year: 2024
-  place: San Diego, CA
-  deadline:
-    - "2023-04-20 11:59"
-    - "2023-08-10 11:59"
-    - "2023-11-30 11:59"
-  comment: three deadlines, spring, summer, fall
-  link: https://www.asplos-conference.org/asplos2024/cfp/
-  tags: [PL, OS, ARCH]
+  year: 2027
+  date: "April 11-15"
+  place: Heraklion, Crete, Greece
+  link: https://www.asplos-conference.org/asplos2027/cfp/
+  deadline: "2026-09-09 23:59"
+  comment: Fall (September) submission cycle; two cycles per year, no separate abstract deadline
+  tags: [OS, ARCH, PL]
 
 - name: CGO
   description: IEEE/ACM International Symposium on Code Generation and Optimization
-  date: March 2-6
-  year: 2024
-  deadline: 
-    - "2023-05-19 23:59"
-    - "2023-09-01 23:59"
-  place: Edinburgh, UK
-  comment: two deadlines, summer, fall. Co-located with PPoPP and HPCA
-  link: https://conf.researchr.org/track/cgo-2024/cgo-2024-main-conference
-  tags: [COMP]
-
-- name: NSDI
-  description: 21st USENIX Symposium on Networked Systems Design and Implementation 
-  date: April 16-18
-  year: 2024
-  place: Santa Clara, CA
-  timezone: Etc/GMT+7
-  deadline:
-    - "2023-05-04 20:59"
-    - "2023-09-21 20:59"
-  comment: two deadlines, spring and fall
-  link: https://www.usenix.org/conference/nsdi24/call-for-papers
-  tags: [NET]
+  year: 2027
+  date: "March 20-24"
+  place: Salt Lake City, Utah, USA
+  link: https://2027.cgo.org/track/cgo-2027-papers
+  deadline: "2026-09-10 23:59"
+  comment: Round 2 submission; co-located with HPCA/PPoPP/CC 2027
+  tags: [COMP, PL]
 
 - name: FAST
-  description: 22nd USENIX Conference on File and Storage Technologies
-  date: February 27-29
-  year: 2024
-  timezone: Etc/GMT+7
-  deadline: "2023-09-21 23:59"
-  place: Santa Clara, CA
-  link: https://www.usenix.org/conference/fast24/call-for-papers
+  description: USENIX Conference on File and Storage Technologies
+  year: 2027
+  date: "February 23-25"
+  place: Renton, Washington, USA
+  link: https://www.usenix.org/conference/fast27/call-for-papers
+  deadline: "2026-09-15 23:59"
+  comment: Fall submission cycle (Spring closed); no separate abstract deadline
   tags: [OS, STOR]
+
+- name: NSDI
+  description: USENIX Symposium on Networked Systems Design and Implementation
+  year: 2027
+  date: "May 11-13"
+  place: Providence, Rhode Island, USA
+  timezone: America/New_York
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  deadline: "2026-09-17 23:59"
+  comment: Fall cycle (Spring closed); abstract registration September 10
+  tags: [NET]
+
+- name: EuroSys
+  description: European Conference on Computer Systems
+  year: 2027
+  date: "April 19-23"
+  place: Rabat, Morocco
+  link: https://2027.eurosys.org/cfp.html
+  deadline: "2026-09-24 23:59"
+  comment: Fall submission cycle (Spring closed); abstract September 17
+  tags: [OS, DIS, ARCH]
+
+- name: VLDB
+  description: International Conference on Very Large Data Bases (PVLDB Vol. 20)
+  year: 2027
+  date: "August 23-27"
+  place: Athens, Greece
+  timezone: America/Los_Angeles
+  link: https://www.vldb.org/2027/important-dates.html
+  deadline: "2026-10-01 17:00"
+  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month through March 2027); abstract due the 25th prior
+  tags: [DB, STOR]
 
 - name: IPDPS
   description: IEEE International Parallel and Distributed Processing Symposium
-  comment: abstract deadline Sep 28
-  year: 2024
-  date: May 27 - 31
-  deadline: "2023-10-03 23:59"
-  place: Lyon, France
-  link: https://www.ipdps.org/
+  year: 2027
+  date: "June 1-5"
+  place: Seattle, Washington, USA
+  link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
+  deadline: "2026-10-08 23:59"
+  comment: Abstract registration October 1; firm deadline
   tags: [PAR]
 
-- name: EuroSys
-  description: The European Conference on Computer Systems
-  date: April 22-25
-  year: 2024
-  place: Athens, Greece
-  timezone: Etc/GMT
-  deadline: 
-    - "2023-05-24 23:59"
-    - "2023-10-19 23:59"
-  comment: two deadlines, spring and fall
-  link: https://2024.eurosys.org/cfp.html#pagetop
-  tags: [OS, ARCH, NET]
+- name: SIGMETRICS
+  description: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
+  year: 2027
+  date: "June 7-11"
+  place: Atlanta, Georgia, USA
+  link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
+  deadline: "2026-10-09 23:59"
+  comment: Fall round (Summer closed); Winter round ~January 11, 2027. Abstract ~1 week before each
+  tags: [MEAS]
+
+- name: MLSys
+  description: Conference on Machine Learning and Systems
+  year: 2027
+  date: TBA
+  place: Bellevue, Washington, USA
+  timezone: America/Los_Angeles
+  link: https://mlsys.org/
+  deadline: "2026-10-30 12:00"
+  comment: Single submission deadline; submissions open October 10
+  tags: [ML]
 
 - name: PLDI
-  deadline: "2023-11-16 23:59"
-  description: The 45th ACM SIGPLAN Conference on Programming Language Design and Implementation
-  date: June 24-28
-  year: 2024
-  place: Copenhagen, Denmark
-  comment: no abstract deadline
-  link: https://pldi24.sigplan.org/track/pldi-2024-papers
+  description: ACM SIGPLAN Conference on Programming Language Design and Implementation
+  year: 2027
+  date: "June 5-11"
+  place: Atlanta, Georgia, USA
+  link: https://pldi27.sigplan.org/
+  deadline: "2026-11-12 23:59"
+  comment: Single round; exact submission time not yet posted on the official site
   tags: [PL]
 
-- name: ISCA
-  deadline: "2023-11-21 23:59"
-  description: International Symposium on Computer Architecture
-  date: June 29 - July 3
-  year: 2024
-  comment: Abstract Nov. 14
-  place: Buenos Aires, Argentina
-  link: https://iscaconf.org/isca2024/
-  tags: [ARCH]
-
-- name: Middleware
-  year: 2024
-  date: December 2-6
-  description: 25th ACM/IFIP International Middleware Conference
-  deadline: 
-    - "2023-12-01 23:59"
-    - "2024-05-24 23:59"
-  comment: two deadlines, fall and spring
-  place: Hong Kong, China
-  link: https://middleware-conf.github.io/2024/
-  tags: [OS, NET]
+- name: CCGrid
+  description: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
+  year: 2027
+  date: "May 24-27"
+  place: Dallas-Fort Worth, Texas, USA
+  link: https://hpcclab.org/ccgrid27/
+  deadline: "2026-12-01 23:59"
+  comment: Abstract registration November 24
+  tags: [PAR, CLOUD]
 
 - name: OSDI
-  deadline: "2023-12-07 17:59"
-  description: 18th USENIX Symposium on Operating Systems Design and Implementation
-  date: July 10-12
-  year: 2024
-  timezone: Etc/GMT+4
-  place: Santa Clara, CA, USA
-  link: https://www.usenix.org/conference/osdi24/call-for-papers
+  description: USENIX Symposium on Operating Systems Design and Implementation
+  year: 2027
+  date: "July 7-9"
+  place: Baltimore, Maryland, USA
+  timezone: America/New_York
+  link: https://www.usenix.org/conference/osdi27/call-for-papers
+  deadline: "2026-12-08 17:59"
+  comment: Abstract registration December 1; co-located with USENIX ATC
   tags: [OS]
 
+# --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
+
 - name: ISPASS
-  deadline: "2023-12-15 23:59"
-  description: 2024 IEEE International Symposium on Performance Analysis of Systems and Software
-  date: May 5-7
-  year: 2024
-  place: Indianapolis, Indiana
-  link: https://ispass.org/ispass2024/
+  description: IEEE International Symposium on Performance Analysis of Systems and Software
+  year: 2027
+  date: TBA
+  link: https://ispass.org/
+  deadline: TBA
+  comment: CFP not yet released; ISPASS 2026 deadline was mid-December 2025 (expect ~December 2026)
   tags: [MEAS, ARCH]
 
-- name: HPDC
-  deadline: "2024-01-25 23:59"
-  description: The 33rd International Symposium on High-Performance Parallel and Distributed Computing
-  date: June 3-7
-  year: 2024
-  place: Pisa, Italy
-  link: https://www.hpdc.org/2024/
-  tags: [PAR]
+- name: ISCA
+  description: International Symposium on Computer Architecture
+  year: 2027
+  date: TBA
+  link: https://iscaconf.org/
+  deadline: TBA
+  comment: CFP not yet released; ISCA 2026 full-paper deadline was mid-November 2025 (expect ~November 2026)
+  tags: [ARCH]
 
-- name: USENIX ATC
-  deadline: "2024-01-16 23:59"
-  description: The 2024 USENIX Annual Technical Conference
-  date: July 10-12
-  year: 2024
-  timezone: Etc/GMT+4
-  place: Santa Clara, CA, USA
-  link: https://www.usenix.org/conference/atc24/call-for-papers
-  comment: abstract deadline is January 9
+- name: MICRO
+  description: IEEE/ACM International Symposium on Microarchitecture
+  year: 2027
+  date: TBA
+  link: https://www.microarch.org/
+  deadline: TBA
+  comment: CFP not yet released; MICRO 2026 deadline was early April 2026 (expect ~spring 2027)
+  tags: [ARCH]
+
+- name: HPCA
+  description: IEEE International Symposium on High-Performance Computer Architecture
+  year: 2028
+  date: TBA
+  link: https://www.hpca-conf.org/
+  deadline: TBA
+  comment: HPCA 2027 deadline (July 2026) has passed; HPCA 2028 CFP not yet released (expect ~summer 2027)
+  tags: [ARCH]
+
+- name: SIGCOMM
+  description: ACM SIGCOMM Conference
+  year: 2027
+  date: TBA
+  link: https://conferences.sigcomm.org/sigcomm/
+  deadline: TBA
+  comment: CFP not yet released; SIGCOMM 2026 deadline was early February 2026 (expect ~February 2027)
+  tags: [NET]
+
+- name: ICDCS
+  description: IEEE International Conference on Distributed Computing Systems
+  year: 2027
+  date: "July 5-8"
+  place: Melbourne, Australia
+  link: https://www.icdcs.org/
+  deadline: TBA
+  comment: CFP not yet released; ICDCS 2026 deadline was late January 2026 (expect ~January 2027)
+  tags: [CLOUD, OS, DIS]
+
+- name: Middleware
+  description: ACM/IFIP International Middleware Conference
+  year: 2027
+  date: TBA
+  link: https://middleware-conf.github.io/
+  deadline: TBA
+  comment: 2026 submission cycles closed; 2027 CFP not yet released
   tags: [OS, NET]
 
-- name: Euro-Par
-  description: 30th International European Conference on Parallel and Distributed Computing
-  date: August 26-30
-  year: 2024
-  place: Madrid, Spain
-  link: https://2024.euro-par.org/
-  comment: abstract deadline is March 5
-  deadline: "2024-03-25 23:59"
-  tags: [PAR]
+- name: SOSP
+  description: ACM Symposium on Operating Systems Principles
+  year: 2027
+  date: TBA
+  link: https://sigops.org/s/conferences/sosp/
+  deadline: TBA
+  comment: SOSP 2026 (Seoul) deadline has passed; SOSP 2027 CFP not yet released
+  tags: [OS]
+
+- name: USENIX ATC
+  description: USENIX Annual Technical Conference
+  year: 2027
+  date: TBA
+  link: https://www.usenix.org/conferences/calls-for-papers
+  deadline: TBA
+  comment: Typically co-located with OSDI; ATC 2027 CFP not yet released
+  tags: [OS, NET]
+
+- name: HotOS
+  description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
+  year: 2027
+  date: "May 24-26"
+  place: TBA
+  link: https://sigops.org/s/conferences/hotos/2027/
+  deadline: TBA
+  comment: HotOS XXI; dates confirmed, submission deadline not yet posted (expect ~January 2027)
+  tags: [OS]
 
 - name: SC
   description: International Conference for High Performance Computing, Networking, Storage and Analysis
-  deadline: "2024-04-02 23:59"
-  date: November 17-22
-  year: 2024
-  place: Atlanta, GA, USA
-  link: https://sc24.supercomputing.org/all-dates-deadlines/
-  comment: abstract deadline 3/26
+  year: 2027
+  date: TBA
+  link: https://supercomputing.org/
+  deadline: TBA
+  comment: SC 2026 (Chicago) deadline has passed; SC 2027 CFP not yet released (expect ~April 2027)
   tags: [PAR]
 
+- name: HPDC
+  description: ACM International Symposium on High-Performance Parallel and Distributed Computing
+  year: 2027
+  date: TBA
+  link: https://www.hpdc.org/
+  deadline: TBA
+  comment: CFP not yet released; HPDC 2026 deadline was early February 2026 (expect ~February 2027)
+  tags: [PAR]
+
+- name: ICPP
+  description: International Conference on Parallel Processing
+  year: 2027
+  date: TBA
+  link: https://icpp2026.github.io/
+  deadline: TBA
+  comment: CFP not yet released; ICPP 2026 deadline was early May 2026 (expect ~spring 2027)
+  tags: [PAR]
+
+- name: PPoPP
+  description: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+  year: 2028
+  date: TBA
+  link: https://ppopp.sigplan.org/
+  deadline: TBA
+  comment: PPoPP 2027 deadline (August 2026) has passed; PPoPP 2028 CFP not yet released (expect ~August 2027)
+  tags: [PL, PAR]
+
+- name: Euro-Par
+  description: International European Conference on Parallel and Distributed Computing
+  year: 2027
+  date: "August 23-27"
+  place: Groningen, Netherlands
+  link: https://2027.euro-par.org/
+  deadline: TBA
+  comment: Venue/dates confirmed; submission deadlines not yet posted (expect ~February-March 2027)
+  tags: [PAR]
+
+- name: ICS
+  description: ACM International Conference on Supercomputing
+  year: 2027
+  date: TBA
+  place: Atlanta, Georgia, USA
+  link: https://www.ics-conference.org/
+  deadline: TBA
+  comment: Part of ACM FCRC 2027; CFP not yet released (ICS 2026 first cycle was ~December 2025)
+  tags: [PAR]
+
+- name: CLUSTER
+  description: IEEE International Conference on Cluster Computing
+  year: 2027
+  date: TBA
+  link: https://clustercomp.org/
+  deadline: TBA
+  comment: CFP not yet released; CLUSTER 2026 deadline was early May 2026 (expect ~spring 2027)
+  tags: [PAR]
+
+- name: HiPC
+  description: IEEE International Conference on High Performance Computing, Data, and Analytics
+  year: 2027
+  date: TBA
+  place: India
+  link: https://hipc.org/
+  deadline: TBA
+  comment: HiPC 2026 (Bengaluru) deadline has passed; HiPC 2027 CFP not yet released
+  tags: [PAR]
+
+- name: MASCOTS
+  description: International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
+  year: 2027
+  date: TBA
+  link: http://mascots.iitis.pl/
+  deadline: TBA
+  comment: MASCOTS 2026 (Genova) deadline has passed; MASCOTS 2027 CFP not yet released
+  tags: [OS, ARCH, MEAS]
+
+- name: ICPE
+  description: ACM/SPEC International Conference on Performance Engineering
+  year: 2027
+  date: TBA
+  place: Gothenburg, Sweden
+  link: https://icpe2027.spec.org/
+  deadline: TBA
+  comment: CFP not yet released; ICPE 2026 deadline was mid-November 2025 (expect ~November 2026)
+  tags: [PAR, MEAS]
