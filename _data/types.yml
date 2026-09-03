@@ -1,20 +1,24 @@
 ---
 - name: Operating Systems
   tag: OS
+- name: High-Performance Computing
+  tag: HPC
 - name: Parallel and Distributed Computing
   tag: PAR
 - name: Computer Architecture
   tag: ARCH
 - name: Programming Languages
   tag: PL
-- name: Embedded Systems
-  tag: EMB
-- name: Networking
-  tag: NET
-- name: Storage
-  tag: STOR
 - name: Compilers
   tag: COMP
+- name: Networking
+  tag: NET
+- name: Mobile and Wireless
+  tag: MOBILE
+- name: Storage
+  tag: STOR
+- name: Embedded Systems
+  tag: EMB
 - name: Measurement and Performance
   tag: MEAS
 - name: Cloud Computing

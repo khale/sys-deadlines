@@ -4,7 +4,8 @@
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
-#   - timezone omitted => AoE (Anywhere on Earth, UTC-12). tz sign is inverted (UTC-8 => Etc/GMT+8).
+#   - timezone omitted => AoE (Anywhere on Earth, UTC-12). tz sign is inverted (UTC-8 => Etc/GMT+8);
+#     prefer named IANA zones (America/New_York, America/Los_Angeles) which handle DST.
 #   - each entry leads with its nearest UPCOMING deadline; the weekly refresh prunes passed ones.
 #
 
@@ -80,7 +81,7 @@
   link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
   deadline: "2026-10-08 23:59"
   comment: Abstract registration October 1; firm deadline
-  tags: [PAR]
+  tags: [HPC, PAR]
 
 - name: SIGMETRICS
   description: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
@@ -92,6 +93,16 @@
   comment: Fall round (Summer closed); Winter round ~January 11, 2027. Abstract ~1 week before each
   tags: [MEAS]
 
+- name: HotMobile
+  description: ACM International Workshop on Mobile Computing Systems and Applications
+  year: 2027
+  date: "February 24-25"
+  place: Tucson, Arizona, USA
+  link: https://www.hotmobile.org/2027/
+  deadline: "2026-10-09 23:59"
+  comment: Single deadline, no separate abstract phase (6-page papers)
+  tags: [MOBILE]
+
 - name: MLSys
   description: Conference on Machine Learning and Systems
   year: 2027
@@ -102,6 +113,16 @@
   deadline: "2026-10-30 12:00"
   comment: Single submission deadline; submissions open October 10
   tags: [ML]
+
+- name: SenSys
+  description: ACM Conference on Embedded Networked Sensor Systems (Embedded AI and Sensing Systems)
+  year: 2027
+  date: "May 17-20"
+  place: Boulder, Colorado, USA
+  link: https://sensys.acm.org/2027/
+  deadline: "2026-11-05 23:59"
+  comment: Cycle 2 (Cycle 1 closed); abstract October 29. Now merged with IPSN and IoTDI
+  tags: [MOBILE, EMB, NET]
 
 - name: PLDI
   description: ACM SIGPLAN Conference on Programming Language Design and Implementation
@@ -121,7 +142,7 @@
   link: https://hpcclab.org/ccgrid27/
   deadline: "2026-12-01 23:59"
   comment: Abstract registration November 24
-  tags: [PAR, CLOUD]
+  tags: [HPC, PAR, CLOUD]
 
 - name: OSDI
   description: USENIX Symposium on Operating Systems Design and Implementation
@@ -131,7 +152,7 @@
   timezone: America/New_York
   link: https://www.usenix.org/conference/osdi27/call-for-papers
   deadline: "2026-12-08 17:59"
-  comment: Abstract registration December 1; co-located with USENIX ATC
+  comment: Abstract registration December 1
   tags: [OS]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
@@ -181,6 +202,34 @@
   comment: CFP not yet released; SIGCOMM 2026 deadline was early February 2026 (expect ~February 2027)
   tags: [NET]
 
+- name: MobiCom
+  description: ACM International Conference on Mobile Computing and Networking
+  year: 2027
+  date: "October 18-22"
+  link: https://www.sigmobile.org/mobicom/2027/
+  deadline: TBA
+  comment: Summer cycle closed Sep 2; Winter cycle deadline not yet posted
+  tags: [MOBILE, NET]
+
+- name: MobiSys
+  description: ACM International Conference on Mobile Systems, Applications, and Services
+  year: 2027
+  date: "June 21-25"
+  place: Ho Chi Minh City, Vietnam
+  link: https://www.sigmobile.org/mobisys/2027/
+  deadline: TBA
+  comment: CFP not yet released; venue/dates confirmed (expect first deadline ~late 2026)
+  tags: [MOBILE, NET]
+
+- name: MobiHoc
+  description: ACM International Symposium on Mobile Ad Hoc Networking and Computing
+  year: 2027
+  date: TBA
+  link: https://www.sigmobile.org/mobihoc/
+  deadline: TBA
+  comment: CFP not yet released; MobiHoc 2026 (Tokyo) deadline was April 2026 (expect ~April 2027)
+  tags: [MOBILE, NET]
+
 - name: ICDCS
   description: IEEE International Conference on Distributed Computing Systems
   year: 2027
@@ -209,15 +258,6 @@
   comment: SOSP 2026 (Seoul) deadline has passed; SOSP 2027 CFP not yet released
   tags: [OS]
 
-- name: USENIX ATC
-  description: USENIX Annual Technical Conference
-  year: 2027
-  date: TBA
-  link: https://www.usenix.org/conferences/calls-for-papers
-  deadline: TBA
-  comment: Typically co-located with OSDI; ATC 2027 CFP not yet released
-  tags: [OS, NET]
-
 - name: HotOS
   description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
   year: 2027
@@ -235,7 +275,7 @@
   link: https://supercomputing.org/
   deadline: TBA
   comment: SC 2026 (Chicago) deadline has passed; SC 2027 CFP not yet released (expect ~April 2027)
-  tags: [PAR]
+  tags: [HPC]
 
 - name: HPDC
   description: ACM International Symposium on High-Performance Parallel and Distributed Computing
@@ -244,7 +284,7 @@
   link: https://www.hpdc.org/
   deadline: TBA
   comment: CFP not yet released; HPDC 2026 deadline was early February 2026 (expect ~February 2027)
-  tags: [PAR]
+  tags: [HPC, PAR]
 
 - name: ICPP
   description: International Conference on Parallel Processing
@@ -253,7 +293,7 @@
   link: https://icpp2026.github.io/
   deadline: TBA
   comment: CFP not yet released; ICPP 2026 deadline was early May 2026 (expect ~spring 2027)
-  tags: [PAR]
+  tags: [HPC, PAR]
 
 - name: PPoPP
   description: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
@@ -262,7 +302,7 @@
   link: https://ppopp.sigplan.org/
   deadline: TBA
   comment: PPoPP 2027 deadline (August 2026) has passed; PPoPP 2028 CFP not yet released (expect ~August 2027)
-  tags: [PL, PAR]
+  tags: [PL, PAR, HPC]
 
 - name: Euro-Par
   description: International European Conference on Parallel and Distributed Computing
@@ -272,7 +312,7 @@
   link: https://2027.euro-par.org/
   deadline: TBA
   comment: Venue/dates confirmed; submission deadlines not yet posted (expect ~February-March 2027)
-  tags: [PAR]
+  tags: [HPC, PAR]
 
 - name: ICS
   description: ACM International Conference on Supercomputing
@@ -282,7 +322,7 @@
   link: https://www.ics-conference.org/
   deadline: TBA
   comment: Part of ACM FCRC 2027; CFP not yet released (ICS 2026 first cycle was ~December 2025)
-  tags: [PAR]
+  tags: [HPC]
 
 - name: CLUSTER
   description: IEEE International Conference on Cluster Computing
@@ -291,7 +331,7 @@
   link: https://clustercomp.org/
   deadline: TBA
   comment: CFP not yet released; CLUSTER 2026 deadline was early May 2026 (expect ~spring 2027)
-  tags: [PAR]
+  tags: [HPC, PAR]
 
 - name: HiPC
   description: IEEE International Conference on High Performance Computing, Data, and Analytics
@@ -301,7 +341,7 @@
   link: https://hipc.org/
   deadline: TBA
   comment: HiPC 2026 (Bengaluru) deadline has passed; HiPC 2027 CFP not yet released
-  tags: [PAR]
+  tags: [HPC]
 
 - name: MASCOTS
   description: International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
