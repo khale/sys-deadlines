@@ -229,6 +229,18 @@ $(function() {
   store.set('{{ site.domain }}', tags);
   store.set('{{ site.domain }}:known', all_tags);
 
+  // Master "All topics" checkbox reflects/controls the individual topic boxes.
+  function updateAllCheckbox() {
+    var on = 0;
+    for (var i = 0; i < all_tags.length; i++) {
+      if (toggle_status[all_tags[i]]) on++;
+    }
+    $('#all-checkbox')
+      .prop('checked', on === all_tags.length)
+      .prop('indeterminate', on > 0 && on < all_tags.length);
+  }
+  updateAllCheckbox();
+
   // ---- Filter state ----
   var dayWindow = 0;   // 0 = any
   var hidePast = false;
@@ -278,8 +290,8 @@ $(function() {
   }
   update_conf_list();
 
-  // Event handler on checkbox change
-  $('form :checkbox').change(function(e) {
+  // Event handler on individual topic checkbox change
+  $('form :checkbox').not('#all-checkbox').change(function(e) {
     var checked = $(this).is(':checked');
     var tag = $(this).prop('id').slice(0, -9);
     toggle_status[tag] = checked;
@@ -293,6 +305,20 @@ $(function() {
       if (idx >= 0)
         tags.splice(idx, 1);
     }
+    store.set('{{ site.domain }}', tags);
+    updateAllCheckbox();
+    update_conf_list();
+  });
+
+  // Master "All topics" toggle: check/uncheck every topic at once
+  $('#all-checkbox').change(function() {
+    var checked = $(this).is(':checked');
+    tags = checked ? all_tags.slice() : [];
+    for (var i = 0; i < all_tags.length; i++) {
+      toggle_status[all_tags[i]] = checked;
+      $('#' + all_tags[i] + '-checkbox').prop('checked', checked);
+    }
+    $(this).prop('indeterminate', false);
     store.set('{{ site.domain }}', tags);
     update_conf_list();
   });
