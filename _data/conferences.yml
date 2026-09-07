@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-09-03
+# Last refreshed: 2026-09-07
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -131,8 +131,18 @@
   place: Atlanta, Georgia, USA
   link: https://pldi27.sigplan.org/
   deadline: "2026-11-12 23:59"
-  comment: Single round; exact submission time not yet posted on the official site
+  comment: Single round; submission deadline confirmed AoE (UTC-12), no separate abstract
   tags: [PL]
+
+- name: ICPE
+  description: ACM/SPEC International Conference on Performance Engineering
+  year: 2027
+  date: "May 24-28"
+  place: Gothenburg, Sweden
+  link: https://icpe2027.spec.org/call-for-contributions/
+  deadline: "2026-11-16 23:59"
+  comment: 18th ICPE; CFP now published. Research track; abstract registration November 9 (AoE)
+  tags: [PAR, MEAS]
 
 - name: CCGrid
   description: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
@@ -352,12 +362,3 @@
   comment: MASCOTS 2026 (Genova) deadline has passed; MASCOTS 2027 CFP not yet released
   tags: [OS, ARCH, MEAS]
 
-- name: ICPE
-  description: ACM/SPEC International Conference on Performance Engineering
-  year: 2027
-  date: TBA
-  place: Gothenburg, Sweden
-  link: https://icpe2027.spec.org/
-  deadline: TBA
-  comment: CFP not yet released; ICPE 2026 deadline was mid-November 2025 (expect ~November 2026)
-  tags: [PAR, MEAS]
