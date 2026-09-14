@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-09-07
+# Last refreshed: 2026-09-14
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -11,26 +11,6 @@
 
 # --- Confirmed upcoming deadlines ---
 
-- name: ASPLOS
-  description: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
-  year: 2027
-  date: "April 11-15"
-  place: Heraklion, Crete, Greece
-  link: https://www.asplos-conference.org/asplos2027/cfp/
-  deadline: "2026-09-09 23:59"
-  comment: Fall (September) submission cycle; two cycles per year, no separate abstract deadline
-  tags: [OS, ARCH, PL]
-
-- name: CGO
-  description: IEEE/ACM International Symposium on Code Generation and Optimization
-  year: 2027
-  date: "March 20-24"
-  place: Salt Lake City, Utah, USA
-  link: https://2027.cgo.org/track/cgo-2027-papers
-  deadline: "2026-09-10 23:59"
-  comment: Round 2 submission; co-located with HPCA/PPoPP/CC 2027
-  tags: [COMP, PL]
-
 - name: FAST
   description: USENIX Conference on File and Storage Technologies
   year: 2027
@@ -38,7 +18,7 @@
   place: Renton, Washington, USA
   link: https://www.usenix.org/conference/fast27/call-for-papers
   deadline: "2026-09-15 23:59"
-  comment: Fall submission cycle (Spring closed); no separate abstract deadline
+  comment: Fall submission cycle (Spring closed), last FAST '27 cycle; AoE, no separate abstract deadline
   tags: [OS, STOR]
 
 - name: NSDI
@@ -49,7 +29,7 @@
   timezone: America/New_York
   link: https://www.usenix.org/conference/nsdi27/call-for-papers
   deadline: "2026-09-17 23:59"
-  comment: Fall cycle (Spring closed); abstract registration September 10
+  comment: Fall cycle (Spring closed); abstract registration September 10. Deadline stated 11:59pm US EDT
   tags: [NET]
 
 - name: EuroSys
@@ -59,7 +39,7 @@
   place: Rabat, Morocco
   link: https://2027.eurosys.org/cfp.html
   deadline: "2026-09-24 23:59"
-  comment: Fall submission cycle (Spring closed); abstract September 17
+  comment: Fall submission cycle (Spring closed), last EuroSys 2027 cycle; abstract September 17 (AoE)
   tags: [OS, DIS, ARCH]
 
 - name: VLDB
@@ -70,7 +50,7 @@
   timezone: America/Los_Angeles
   link: https://www.vldb.org/2027/important-dates.html
   deadline: "2026-10-01 17:00"
-  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month through March 2027); abstract due the 25th prior
+  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
   tags: [DB, STOR]
 
 - name: IPDPS
@@ -80,7 +60,7 @@
   place: Seattle, Washington, USA
   link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
   deadline: "2026-10-08 23:59"
-  comment: Abstract registration October 1; firm deadline
+  comment: Abstract registration October 1; firm deadline, no extensions (AoE)
   tags: [HPC, PAR]
 
 - name: SIGMETRICS
@@ -90,7 +70,7 @@
   place: Atlanta, Georgia, USA
   link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
   deadline: "2026-10-09 23:59"
-  comment: Fall round (Summer closed); Winter round ~January 11, 2027. Abstract ~1 week before each
+  comment: Fall round (Summer closed); Winter round paper January 11, 2027. Abstract October 2 (AoE)
   tags: [MEAS]
 
 - name: HotMobile
@@ -98,9 +78,9 @@
   year: 2027
   date: "February 24-25"
   place: Tucson, Arizona, USA
-  link: https://www.hotmobile.org/2027/
+  link: https://www.hotmobile.org/2027/index.php?id=cfp
   deadline: "2026-10-09 23:59"
-  comment: Single deadline, no separate abstract phase (6-page papers)
+  comment: Single deadline, no separate abstract phase (6-page papers), AoE
   tags: [MOBILE]
 
 - name: MLSys
@@ -111,7 +91,7 @@
   timezone: America/Los_Angeles
   link: https://mlsys.org/
   deadline: "2026-10-30 12:00"
-  comment: Single submission deadline; submissions open October 10
+  comment: Single submission deadline at NOON (12:00 PT); submissions open October 10
   tags: [ML]
 
 - name: SenSys
@@ -121,7 +101,7 @@
   place: Boulder, Colorado, USA
   link: https://sensys.acm.org/2027/
   deadline: "2026-11-05 23:59"
-  comment: Cycle 2 (Cycle 1 closed); abstract October 29. Now merged with IPSN and IoTDI
+  comment: Cycle 2 (Cycle 1 closed); abstract October 29 (AoE). Now merged with IPSN and IoTDI
   tags: [MOBILE, EMB, NET]
 
 - name: PLDI
@@ -141,7 +121,7 @@
   place: Gothenburg, Sweden
   link: https://icpe2027.spec.org/call-for-contributions/
   deadline: "2026-11-16 23:59"
-  comment: 18th ICPE; CFP now published. Research track; abstract registration November 9 (AoE)
+  comment: 18th ICPE; research track, abstract registration November 9 (AoE)
   tags: [PAR, MEAS]
 
 - name: CCGrid
@@ -151,7 +131,7 @@
   place: Dallas-Fort Worth, Texas, USA
   link: https://hpcclab.org/ccgrid27/
   deadline: "2026-12-01 23:59"
-  comment: Abstract registration November 24
+  comment: Abstract registration November 24 (AoE)
   tags: [HPC, PAR, CLOUD]
 
 - name: OSDI
@@ -162,7 +142,7 @@
   timezone: America/New_York
   link: https://www.usenix.org/conference/osdi27/call-for-papers
   deadline: "2026-12-08 17:59"
-  comment: Abstract registration December 1
+  comment: Abstract registration December 1; deadline stated 5:59pm EST
   tags: [OS]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
@@ -173,7 +153,7 @@
   date: TBA
   link: https://ispass.org/
   deadline: TBA
-  comment: CFP not yet released; ISPASS 2026 deadline was mid-December 2025 (expect ~December 2026)
+  comment: CFP not yet released; ISPASS 2026 full-paper deadline was December 15, 2025 (expect ~December 2026)
   tags: [MEAS, ARCH]
 
 - name: ISCA
@@ -182,7 +162,7 @@
   date: TBA
   link: https://iscaconf.org/
   deadline: TBA
-  comment: CFP not yet released; ISCA 2026 full-paper deadline was mid-November 2025 (expect ~November 2026)
+  comment: CFP not yet released; ISCA 2026 full-paper deadline was November 17, 2025 (expect ~November 2026)
   tags: [ARCH]
 
 - name: MICRO
@@ -191,7 +171,7 @@
   date: TBA
   link: https://www.microarch.org/
   deadline: TBA
-  comment: CFP not yet released; MICRO 2026 deadline was early April 2026 (expect ~spring 2027)
+  comment: CFP not yet released; MICRO 2026 full-paper deadline was April 7, 2026 (expect ~spring 2027)
   tags: [ARCH]
 
 - name: HPCA
@@ -200,25 +180,44 @@
   date: TBA
   link: https://www.hpca-conf.org/
   deadline: TBA
-  comment: HPCA 2027 deadline (July 2026) has passed; HPCA 2028 CFP not yet released (expect ~summer 2027)
+  comment: HPCA 2027 deadline (July 31, 2026) has passed; HPCA 2028 CFP not yet released (expect ~July 2027)
   tags: [ARCH]
+
+- name: ASPLOS
+  description: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+  year: 2028
+  date: TBA
+  link: https://www.asplos-conference.org/
+  deadline: TBA
+  comment: Both ASPLOS 2027 cycles have passed (Sep 9, 2026 fall cycle was last); ASPLOS 2028 CFP not yet released (expect first/spring cycle ~April 2027)
+  tags: [OS, ARCH, PL]
+
+- name: CGO
+  description: IEEE/ACM International Symposium on Code Generation and Optimization
+  year: 2028
+  date: TBA
+  link: https://conf.researchr.org/series/cgo
+  deadline: TBA
+  comment: All CGO 2027 rounds have passed (Round 2 Sep 10, 2026); CGO 2028 CFP not yet released (expect Round 1 ~June 2027)
+  tags: [COMP, PL]
 
 - name: SIGCOMM
   description: ACM SIGCOMM Conference
   year: 2027
-  date: TBA
-  link: https://conferences.sigcomm.org/sigcomm/
+  date: "August 8-12"
+  place: Bangkok, Thailand
+  link: https://conferences.sigcomm.org/sigcomm/2027/
   deadline: TBA
-  comment: CFP not yet released; SIGCOMM 2026 deadline was early February 2026 (expect ~February 2027)
+  comment: SIGCOMM 2027 site live (venue/dates confirmed); submission deadlines not yet posted (expect ~late January-February 2027)
   tags: [NET]
 
 - name: MobiCom
   description: ACM International Conference on Mobile Computing and Networking
   year: 2027
   date: "October 18-22"
-  link: https://www.sigmobile.org/mobicom/2027/
+  link: https://www.sigmobile.org/mobicom/2027/cfp.html
   deadline: TBA
-  comment: Summer cycle closed Sep 2; Winter cycle deadline not yet posted
+  comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle deadline still TBD on official CFP (expect ~December 2026-January 2027)
   tags: [MOBILE, NET]
 
 - name: MobiSys
@@ -226,9 +225,9 @@
   year: 2027
   date: "June 21-25"
   place: Ho Chi Minh City, Vietnam
-  link: https://www.sigmobile.org/mobisys/2027/
+  link: https://www.sigmobile.org/mobisys/2027/call_for_papers/
   deadline: TBA
-  comment: CFP not yet released; venue/dates confirmed (expect first deadline ~late 2026)
+  comment: CFP timeline not yet posted (all dates TBA on official CFP); expect first submission deadline ~late 2026
   tags: [MOBILE, NET]
 
 - name: MobiHoc
@@ -237,7 +236,7 @@
   date: TBA
   link: https://www.sigmobile.org/mobihoc/
   deadline: TBA
-  comment: CFP not yet released; MobiHoc 2026 (Tokyo) deadline was April 2026 (expect ~April 2027)
+  comment: CFP not yet released; MobiHoc 2026 (Tokyo) deadline was April 20, 2026 (expect ~April 2027)
   tags: [MOBILE, NET]
 
 - name: ICDCS
@@ -256,7 +255,7 @@
   date: TBA
   link: https://middleware-conf.github.io/
   deadline: TBA
-  comment: 2026 submission cycles closed; 2027 CFP not yet released
+  comment: 2026 submission cycles closed; 2027 CFP not yet released (expect Cycle 1 ~mid-December 2026)
   tags: [OS, NET]
 
 - name: SOSP
@@ -272,19 +271,20 @@
   description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
   year: 2027
   date: "May 24-26"
-  place: TBA
-  link: https://sigops.org/s/conferences/hotos/2027/
+  place: Burghausen, Bavaria, Germany
+  link: https://sigops.org/s/conferences/hotos/2027/cfp.html
   deadline: TBA
-  comment: HotOS XXI; dates confirmed, submission deadline not yet posted (expect ~January 2027)
+  comment: HotOS XXI; dates/venue confirmed, submission deadline not yet posted (expect ~January 2027)
   tags: [OS]
 
 - name: SC
   description: International Conference for High Performance Computing, Networking, Storage and Analysis
   year: 2027
-  date: TBA
+  date: "November 14-19"
+  place: Denver, Colorado, USA
   link: https://supercomputing.org/
   deadline: TBA
-  comment: SC 2026 (Chicago) deadline has passed; SC 2027 CFP not yet released (expect ~April 2027)
+  comment: SC 2026 (Chicago) deadline has passed; SC 2027 papers CFP not yet released (expect ~April 2027)
   tags: [HPC]
 
 - name: HPDC
@@ -293,7 +293,7 @@
   date: TBA
   link: https://www.hpdc.org/
   deadline: TBA
-  comment: CFP not yet released; HPDC 2026 deadline was early February 2026 (expect ~February 2027)
+  comment: CFP not yet released; HPDC 2026 deadline was February 5, 2026 (expect ~February 2027)
   tags: [HPC, PAR]
 
 - name: ICPP
@@ -302,7 +302,7 @@
   date: TBA
   link: https://icpp2026.github.io/
   deadline: TBA
-  comment: CFP not yet released; ICPP 2026 deadline was early May 2026 (expect ~spring 2027)
+  comment: CFP not yet released; ICPP 2026 deadline was May 1, 2026 (expect ~spring 2027)
   tags: [HPC, PAR]
 
 - name: PPoPP
@@ -311,7 +311,7 @@
   date: TBA
   link: https://ppopp.sigplan.org/
   deadline: TBA
-  comment: PPoPP 2027 deadline (August 2026) has passed; PPoPP 2028 CFP not yet released (expect ~August 2027)
+  comment: PPoPP 2027 deadline (August 3, 2026) has passed; PPoPP 2028 CFP not yet released (expect ~August 2027)
   tags: [PL, PAR, HPC]
 
 - name: Euro-Par
@@ -331,7 +331,7 @@
   place: Atlanta, Georgia, USA
   link: https://www.ics-conference.org/
   deadline: TBA
-  comment: Part of ACM FCRC 2027; CFP not yet released (ICS 2026 first cycle was ~December 2025)
+  comment: Part of ACM FCRC 2027; CFP not yet released (expect first cycle ~December 2026)
   tags: [HPC]
 
 - name: CLUSTER
@@ -340,7 +340,7 @@
   date: TBA
   link: https://clustercomp.org/
   deadline: TBA
-  comment: CFP not yet released; CLUSTER 2026 deadline was early May 2026 (expect ~spring 2027)
+  comment: CFP not yet released; CLUSTER 2026 deadline was May 7, 2026 (expect ~spring 2027)
   tags: [HPC, PAR]
 
 - name: HiPC
@@ -361,4 +361,3 @@
   deadline: TBA
   comment: MASCOTS 2026 (Genova) deadline has passed; MASCOTS 2027 CFP not yet released
   tags: [OS, ARCH, MEAS]
-
