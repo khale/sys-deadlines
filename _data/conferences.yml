@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-09-14
+# Last refreshed: 2026-09-21
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -10,27 +10,6 @@
 #
 
 # --- Confirmed upcoming deadlines ---
-
-- name: FAST
-  description: USENIX Conference on File and Storage Technologies
-  year: 2027
-  date: "February 23-25"
-  place: Renton, Washington, USA
-  link: https://www.usenix.org/conference/fast27/call-for-papers
-  deadline: "2026-09-15 23:59"
-  comment: Fall submission cycle (Spring closed), last FAST '27 cycle; AoE, no separate abstract deadline
-  tags: [OS, STOR]
-
-- name: NSDI
-  description: USENIX Symposium on Networked Systems Design and Implementation
-  year: 2027
-  date: "May 11-13"
-  place: Providence, Rhode Island, USA
-  timezone: America/New_York
-  link: https://www.usenix.org/conference/nsdi27/call-for-papers
-  deadline: "2026-09-17 23:59"
-  comment: Fall cycle (Spring closed); abstract registration September 10. Deadline stated 11:59pm US EDT
-  tags: [NET]
 
 - name: EuroSys
   description: European Conference on Computer Systems
@@ -86,7 +65,7 @@
 - name: MLSys
   description: Conference on Machine Learning and Systems
   year: 2027
-  date: TBA
+  date: "June 21-25"
   place: Bellevue, Washington, USA
   timezone: America/Los_Angeles
   link: https://mlsys.org/
@@ -111,7 +90,7 @@
   place: Atlanta, Georgia, USA
   link: https://pldi27.sigplan.org/
   deadline: "2026-11-12 23:59"
-  comment: Single round; submission deadline confirmed AoE (UTC-12), no separate abstract
+  comment: Single round; part of FCRC 2027, submission deadline AoE (UTC-12), no separate abstract
   tags: [PL]
 
 - name: ICPE
@@ -146,6 +125,26 @@
   tags: [OS]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
+
+- name: FAST
+  description: USENIX Conference on File and Storage Technologies
+  year: 2028
+  date: "February 28-March 1"
+  place: Seattle, Washington, USA
+  link: https://www.usenix.org/conference/fast28/call-for-papers
+  deadline: TBA
+  comment: Both FAST '27 cycles closed (Fall paper Sep 15, 2026 was last); FAST '28 CFP not yet released (expect Spring cycle ~mid-March 2027, AoE, no separate abstract)
+  tags: [OS, STOR]
+
+- name: NSDI
+  description: USENIX Symposium on Networked Systems Design and Implementation
+  year: 2028
+  date: "May 9-11"
+  place: Santa Clara, California, USA
+  link: https://www.usenix.org/conference/nsdi28/call-for-papers
+  deadline: TBA
+  comment: Both NSDI '27 cycles closed (Fall paper Sep 17, 2026 was last); NSDI '28 CFP not yet released (expect Spring cycle ~late April 2027, 11:59pm US Eastern)
+  tags: [NET]
 
 - name: ISPASS
   description: IEEE International Symposium on Performance Analysis of Systems and Software
@@ -217,7 +216,7 @@
   date: "October 18-22"
   link: https://www.sigmobile.org/mobicom/2027/cfp.html
   deadline: TBA
-  comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle deadline still TBD on official CFP (expect ~December 2026-January 2027)
+  comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle deadline still TBD on official CFP (expect ~late February 2027)
   tags: [MOBILE, NET]
 
 - name: MobiSys
@@ -227,7 +226,7 @@
   place: Ho Chi Minh City, Vietnam
   link: https://www.sigmobile.org/mobisys/2027/call_for_papers/
   deadline: TBA
-  comment: CFP timeline not yet posted (all dates TBA on official CFP); expect first submission deadline ~late 2026
+  comment: CFP timeline not yet posted (only TPC self-nomination Oct 28 listed); expect first submission deadline ~November-December 2026
   tags: [MOBILE, NET]
 
 - name: MobiHoc
@@ -321,7 +320,7 @@
   place: Groningen, Netherlands
   link: https://2027.euro-par.org/
   deadline: TBA
-  comment: Venue/dates confirmed; submission deadlines not yet posted (expect ~February-March 2027)
+  comment: Venue/dates confirmed (site live); submission deadlines not yet posted (expect ~February-March 2027)
   tags: [HPC, PAR]
 
 - name: ICS
@@ -350,7 +349,7 @@
   place: India
   link: https://hipc.org/
   deadline: TBA
-  comment: HiPC 2026 (Bengaluru) deadline has passed; HiPC 2027 CFP not yet released
+  comment: HiPC 2026 author deadline passed (conference Dec 16-19, 2026, Bengaluru); HiPC 2027 CFP not yet released
   tags: [HPC]
 
 - name: MASCOTS
