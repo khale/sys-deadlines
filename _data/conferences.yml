@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-09-21
+# Last refreshed: 2026-09-28
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -11,16 +11,6 @@
 
 # --- Confirmed upcoming deadlines ---
 
-- name: EuroSys
-  description: European Conference on Computer Systems
-  year: 2027
-  date: "April 19-23"
-  place: Rabat, Morocco
-  link: https://2027.eurosys.org/cfp.html
-  deadline: "2026-09-24 23:59"
-  comment: Fall submission cycle (Spring closed), last EuroSys 2027 cycle; abstract September 17 (AoE)
-  tags: [OS, DIS, ARCH]
-
 - name: VLDB
   description: International Conference on Very Large Data Bases (PVLDB Vol. 20)
   year: 2027
@@ -28,7 +18,9 @@
   place: Athens, Greece
   timezone: America/Los_Angeles
   link: https://www.vldb.org/2027/important-dates.html
-  deadline: "2026-10-01 17:00"
+  deadline:
+    - "2026-10-01 17:00"
+    - "2026-11-01 17:00"
   comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
   tags: [DB, STOR]
 
@@ -113,6 +105,26 @@
   comment: Abstract registration November 24 (AoE)
   tags: [HPC, PAR, CLOUD]
 
+- name: MobiSys
+  description: ACM International Conference on Mobile Systems, Applications, and Services
+  year: 2027
+  date: "June 21-25"
+  place: Ho Chi Minh City, Vietnam
+  link: https://www.sigmobile.org/mobisys/2027/call_for_papers/
+  deadline: "2026-12-04 23:59"
+  comment: CFP now published; single round, abstract registration November 27 (AoE), no extensions
+  tags: [MOBILE, NET]
+
+- name: ICS
+  description: ACM International Conference on Supercomputing
+  year: 2027
+  date: "June 5-11"
+  place: Atlanta, Georgia, USA
+  link: https://klab-ai3.github.io/ics2027/
+  deadline: "2026-12-07 23:59"
+  comment: Part of ACM FCRC 2027; CFP now published, abstract December 1 (AoE), first cycle
+  tags: [HPC]
+
 - name: OSDI
   description: USENIX Symposium on Operating Systems Design and Implementation
   year: 2027
@@ -126,6 +138,15 @@
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
 
+- name: EuroSys
+  description: European Conference on Computer Systems
+  year: 2028
+  date: TBA
+  link: https://www.eurosys.org/
+  deadline: TBA
+  comment: Both EuroSys 2027 (Rabat) cycles closed (Fall paper Sep 24, 2026 was last); EuroSys 2028 CFP not yet released (historically two cycles ~spring and ~fall, AoE)
+  tags: [OS, DIS, ARCH]
+
 - name: FAST
   description: USENIX Conference on File and Storage Technologies
   year: 2028
@@ -133,7 +154,7 @@
   place: Seattle, Washington, USA
   link: https://www.usenix.org/conference/fast28/call-for-papers
   deadline: TBA
-  comment: Both FAST '27 cycles closed (Fall paper Sep 15, 2026 was last); FAST '28 CFP not yet released (expect Spring cycle ~mid-March 2027, AoE, no separate abstract)
+  comment: Both FAST '27 cycles closed (Fall paper Sep 15, 2026 was last); FAST '28 CFP not yet released (expect Spring cycle ~mid-March 2027, US Pacific/Eastern, no separate abstract)
   tags: [OS, STOR]
 
 - name: NSDI
@@ -219,16 +240,6 @@
   comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle deadline still TBD on official CFP (expect ~late February 2027)
   tags: [MOBILE, NET]
 
-- name: MobiSys
-  description: ACM International Conference on Mobile Systems, Applications, and Services
-  year: 2027
-  date: "June 21-25"
-  place: Ho Chi Minh City, Vietnam
-  link: https://www.sigmobile.org/mobisys/2027/call_for_papers/
-  deadline: TBA
-  comment: CFP timeline not yet posted (only TPC self-nomination Oct 28 listed); expect first submission deadline ~November-December 2026
-  tags: [MOBILE, NET]
-
 - name: MobiHoc
   description: ACM International Symposium on Mobile Ad Hoc Networking and Computing
   year: 2027
@@ -243,9 +254,9 @@
   year: 2027
   date: "July 5-8"
   place: Melbourne, Australia
-  link: https://www.icdcs.org/
+  link: https://icdcs2027.icdcs.org/
   deadline: TBA
-  comment: CFP not yet released; ICDCS 2026 deadline was late January 2026 (expect ~January 2027)
+  comment: ICDCS 2027 site live (Important Dates all TBD); submission deadline not yet posted (expect ~January 2027)
   tags: [CLOUD, OS, DIS]
 
 - name: Middleware
@@ -323,23 +334,13 @@
   comment: Venue/dates confirmed (site live); submission deadlines not yet posted (expect ~February-March 2027)
   tags: [HPC, PAR]
 
-- name: ICS
-  description: ACM International Conference on Supercomputing
-  year: 2027
-  date: TBA
-  place: Atlanta, Georgia, USA
-  link: https://www.ics-conference.org/
-  deadline: TBA
-  comment: Part of ACM FCRC 2027; CFP not yet released (expect first cycle ~December 2026)
-  tags: [HPC]
-
 - name: CLUSTER
   description: IEEE International Conference on Cluster Computing
   year: 2027
   date: TBA
   link: https://clustercomp.org/
   deadline: TBA
-  comment: CFP not yet released; CLUSTER 2026 deadline was May 7, 2026 (expect ~spring 2027)
+  comment: CFP not yet released; CLUSTER 2026 (Alexandria, VA) deadline was May 7, 2026 (expect ~spring 2027)
   tags: [HPC, PAR]
 
 - name: HiPC
