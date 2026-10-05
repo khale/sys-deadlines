@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-09-28
+# Last refreshed: 2026-10-05
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -19,9 +19,12 @@
   timezone: America/Los_Angeles
   link: https://www.vldb.org/2027/important-dates.html
   deadline:
-    - "2026-10-01 17:00"
     - "2026-11-01 17:00"
-  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
+    - "2026-12-01 17:00"
+    - "2027-01-01 17:00"
+    - "2027-02-01 17:00"
+    - "2027-03-01 17:00"
+  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior. Oct 1 round has passed
   tags: [DB, STOR]
 
 - name: IPDPS
@@ -136,6 +139,16 @@
   comment: Abstract registration December 1; deadline stated 5:59pm EST
   tags: [OS]
 
+- name: HotOS
+  description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
+  year: 2027
+  date: "May 24-26"
+  place: Burghausen, Bavaria, Germany
+  link: https://sigops.org/s/conferences/hotos/2027/cfp.html
+  deadline: "2027-02-01 23:59"
+  comment: HotOS XXI; CFP now posted, hard deadline Feb 1 2027 (no time/timezone stated on CFP; treating as 23:59 AoE, verify closer)
+  tags: [OS]
+
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
 
 - name: EuroSys
@@ -173,7 +186,7 @@
   date: TBA
   link: https://ispass.org/
   deadline: TBA
-  comment: CFP not yet released; ISPASS 2026 full-paper deadline was December 15, 2025 (expect ~December 2026)
+  comment: CFP not yet released; ISPASS 2026 full-paper deadline was December 12, 2025 (expect ~December 2026)
   tags: [MEAS, ARCH]
 
 - name: ISCA
@@ -275,16 +288,6 @@
   link: https://sigops.org/s/conferences/sosp/
   deadline: TBA
   comment: SOSP 2026 (Seoul) deadline has passed; SOSP 2027 CFP not yet released
-  tags: [OS]
-
-- name: HotOS
-  description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
-  year: 2027
-  date: "May 24-26"
-  place: Burghausen, Bavaria, Germany
-  link: https://sigops.org/s/conferences/hotos/2027/cfp.html
-  deadline: TBA
-  comment: HotOS XXI; dates/venue confirmed, submission deadline not yet posted (expect ~January 2027)
   tags: [OS]
 
 - name: SC
