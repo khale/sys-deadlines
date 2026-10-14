@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-10-05
+# Last refreshed: 2026-10-14
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -10,6 +10,17 @@
 #
 
 # --- Confirmed upcoming deadlines ---
+
+- name: MLSys
+  description: Conference on Machine Learning and Systems
+  year: 2027
+  date: "June 21-25"
+  place: Bellevue, Washington, USA
+  timezone: America/Los_Angeles
+  link: https://mlsys.org/
+  deadline: "2026-10-30 12:00"
+  comment: Single submission deadline at NOON (12:00 PT); no separate abstract phase
+  tags: [ML]
 
 - name: VLDB
   description: International Conference on Very Large Data Bases (PVLDB Vol. 20)
@@ -24,49 +35,8 @@
     - "2027-01-01 17:00"
     - "2027-02-01 17:00"
     - "2027-03-01 17:00"
-  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior. Oct 1 round has passed
+  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
   tags: [DB, STOR]
-
-- name: IPDPS
-  description: IEEE International Parallel and Distributed Processing Symposium
-  year: 2027
-  date: "June 1-5"
-  place: Seattle, Washington, USA
-  link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
-  deadline: "2026-10-08 23:59"
-  comment: Abstract registration October 1; firm deadline, no extensions (AoE)
-  tags: [HPC, PAR]
-
-- name: SIGMETRICS
-  description: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
-  year: 2027
-  date: "June 7-11"
-  place: Atlanta, Georgia, USA
-  link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
-  deadline: "2026-10-09 23:59"
-  comment: Fall round (Summer closed); Winter round paper January 11, 2027. Abstract October 2 (AoE)
-  tags: [MEAS]
-
-- name: HotMobile
-  description: ACM International Workshop on Mobile Computing Systems and Applications
-  year: 2027
-  date: "February 24-25"
-  place: Tucson, Arizona, USA
-  link: https://www.hotmobile.org/2027/index.php?id=cfp
-  deadline: "2026-10-09 23:59"
-  comment: Single deadline, no separate abstract phase (6-page papers), AoE
-  tags: [MOBILE]
-
-- name: MLSys
-  description: Conference on Machine Learning and Systems
-  year: 2027
-  date: "June 21-25"
-  place: Bellevue, Washington, USA
-  timezone: America/Los_Angeles
-  link: https://mlsys.org/
-  deadline: "2026-10-30 12:00"
-  comment: Single submission deadline at NOON (12:00 PT); submissions open October 10
-  tags: [ML]
 
 - name: SenSys
   description: ACM Conference on Embedded Networked Sensor Systems (Embedded AI and Sensing Systems)
@@ -87,6 +57,16 @@
   deadline: "2026-11-12 23:59"
   comment: Single round; part of FCRC 2027, submission deadline AoE (UTC-12), no separate abstract
   tags: [PL]
+
+- name: ISCA
+  description: International Symposium on Computer Architecture
+  year: 2027
+  date: "June 5-9"
+  place: Atlanta, Georgia, USA
+  link: https://iscaconf.org/isca2027/submit/callforpapers.php
+  deadline: "2026-11-16 23:59"
+  comment: CFP now published; part of FCRC 2027, single round, abstract November 9 (AoE, 23:59)
+  tags: [ARCH]
 
 - name: ICPE
   description: ACM/SPEC International Conference on Performance Engineering
@@ -115,8 +95,18 @@
   place: Ho Chi Minh City, Vietnam
   link: https://www.sigmobile.org/mobisys/2027/call_for_papers/
   deadline: "2026-12-04 23:59"
-  comment: CFP now published; single round, abstract registration November 27 (AoE), no extensions
+  comment: Single round; abstract registration November 27 (AoE), no extensions
   tags: [MOBILE, NET]
+
+- name: Middleware
+  description: ACM/IFIP International Middleware Conference
+  year: 2027
+  date: "December 13-17"
+  place: Kyoto, Japan
+  link: https://middleware-conf.github.io/2027/
+  deadline: "2026-12-04 23:59"
+  comment: CFP now published; Winter cycle (Cycle 1), abstract November 27 (AoE). Summer cycle paper June 4, 2027
+  tags: [OS, NET]
 
 - name: ICS
   description: ACM International Conference on Supercomputing
@@ -125,7 +115,7 @@
   place: Atlanta, Georgia, USA
   link: https://klab-ai3.github.io/ics2027/
   deadline: "2026-12-07 23:59"
-  comment: Part of ACM FCRC 2027; CFP now published, abstract December 1 (AoE), first cycle
+  comment: Part of ACM FCRC 2027; abstract December 1 (AoE), first cycle
   tags: [HPC]
 
 - name: OSDI
@@ -136,8 +126,18 @@
   timezone: America/New_York
   link: https://www.usenix.org/conference/osdi27/call-for-papers
   deadline: "2026-12-08 17:59"
-  comment: Abstract registration December 1; deadline stated 5:59pm EST
+  comment: Abstract registration December 1; deadline stated 5:59pm EST. Single cycle (firm, no extensions)
   tags: [OS]
+
+- name: SIGMETRICS
+  description: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
+  year: 2027
+  date: "June 7-11"
+  place: Atlanta, Georgia, USA
+  link: https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html
+  deadline: "2027-01-11 23:59"
+  comment: Winter round (Summer and Fall closed); final round, abstract January 4, 2027 (AoE)
+  tags: [MEAS]
 
 - name: HotOS
   description: ACM SIGOPS Workshop on Hot Topics in Operating Systems
@@ -146,10 +146,28 @@
   place: Burghausen, Bavaria, Germany
   link: https://sigops.org/s/conferences/hotos/2027/cfp.html
   deadline: "2027-02-01 23:59"
-  comment: HotOS XXI; CFP now posted, hard deadline Feb 1 2027 (no time/timezone stated on CFP; treating as 23:59 AoE, verify closer)
+  comment: HotOS XXI; hard deadline Feb 1 2027 (no time/timezone stated on CFP; treating as 23:59 AoE, verify closer)
   tags: [OS]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
+
+- name: IPDPS
+  description: IEEE International Parallel and Distributed Processing Symposium
+  year: 2028
+  date: TBA
+  link: https://www.ipdps.org/
+  deadline: TBA
+  comment: IPDPS 2027 paper deadline (October 8, 2026) has passed; IPDPS 2028 CFP not yet released (expect ~October 2027, AoE)
+  tags: [HPC, PAR]
+
+- name: HotMobile
+  description: ACM International Workshop on Mobile Computing Systems and Applications
+  year: 2028
+  date: TBA
+  link: https://www.hotmobile.org/
+  deadline: TBA
+  comment: HotMobile 2027 deadline (October 9, 2026) has passed; HotMobile 2028 CFP not yet released (expect ~October 2027, single deadline AoE)
+  tags: [MOBILE]
 
 - name: EuroSys
   description: European Conference on Computer Systems
@@ -188,15 +206,6 @@
   deadline: TBA
   comment: CFP not yet released; ISPASS 2026 full-paper deadline was December 12, 2025 (expect ~December 2026)
   tags: [MEAS, ARCH]
-
-- name: ISCA
-  description: International Symposium on Computer Architecture
-  year: 2027
-  date: TBA
-  link: https://iscaconf.org/
-  deadline: TBA
-  comment: CFP not yet released; ISCA 2026 full-paper deadline was November 17, 2025 (expect ~November 2026)
-  tags: [ARCH]
 
 - name: MICRO
   description: IEEE/ACM International Symposium on Microarchitecture
@@ -241,7 +250,7 @@
   place: Bangkok, Thailand
   link: https://conferences.sigcomm.org/sigcomm/2027/
   deadline: TBA
-  comment: SIGCOMM 2027 site live (venue/dates confirmed); submission deadlines not yet posted (expect ~late January-February 2027)
+  comment: SIGCOMM 2027 site live (venue/dates confirmed, Queen Sirikit NCC); submission deadlines still TBA (expect ~late January-February 2027)
   tags: [NET]
 
 - name: MobiCom
@@ -250,7 +259,7 @@
   date: "October 18-22"
   link: https://www.sigmobile.org/mobicom/2027/cfp.html
   deadline: TBA
-  comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle deadline still TBD on official CFP (expect ~late February 2027)
+  comment: Summer cycle closed (paper Sep 2, 2026); Winter cycle abstract/paper deadlines still TBD on official CFP (expect ~late February 2027)
   tags: [MOBILE, NET]
 
 - name: MobiHoc
@@ -271,15 +280,6 @@
   deadline: TBA
   comment: ICDCS 2027 site live (Important Dates all TBD); submission deadline not yet posted (expect ~January 2027)
   tags: [CLOUD, OS, DIS]
-
-- name: Middleware
-  description: ACM/IFIP International Middleware Conference
-  year: 2027
-  date: TBA
-  link: https://middleware-conf.github.io/
-  deadline: TBA
-  comment: 2026 submission cycles closed; 2027 CFP not yet released (expect Cycle 1 ~mid-December 2026)
-  tags: [OS, NET]
 
 - name: SOSP
   description: ACM Symposium on Operating Systems Principles
