@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-10-19
+# Last refreshed: 2026-10-26
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -149,6 +149,16 @@
   comment: HotOS XXI; hard deadline Feb 1 2027 (no time/timezone stated on CFP; treating as 23:59 AoE, verify closer)
   tags: [OS]
 
+- name: SIGCOMM
+  description: ACM SIGCOMM Conference
+  year: 2027
+  date: "August 8-12"
+  place: Bangkok, Thailand
+  link: https://conferences.sigcomm.org/sigcomm/2027/
+  deadline: "2027-02-02 23:59"
+  comment: CFP published Oct 19 2026; single hard deadline Feb 2 2027 (no time/timezone stated on CFP, treating as 23:59 AoE, verify closer); no separate abstract
+  tags: [NET]
+
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
 
 - name: IPDPS
@@ -242,16 +252,6 @@
   deadline: TBA
   comment: All CGO 2027 rounds have passed (Round 2 Sep 10, 2026); CGO 2028 CFP not yet released (expect Round 1 ~June 2027)
   tags: [COMP, PL]
-
-- name: SIGCOMM
-  description: ACM SIGCOMM Conference
-  year: 2027
-  date: "August 8-12"
-  place: Bangkok, Thailand
-  link: https://conferences.sigcomm.org/sigcomm/2027/
-  deadline: TBA
-  comment: SIGCOMM 2027 site live (venue/dates confirmed, Queen Sirikit NCC); submission deadlines still TBA (expect ~late January-February 2027)
-  tags: [NET]
 
 - name: MobiCom
   description: ACM International Conference on Mobile Computing and Networking
