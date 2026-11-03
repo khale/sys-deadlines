@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-10-26
+# Last refreshed: 2026-11-03
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -10,33 +10,6 @@
 #
 
 # --- Confirmed upcoming deadlines ---
-
-- name: MLSys
-  description: Conference on Machine Learning and Systems
-  year: 2027
-  date: "June 21-25"
-  place: Bellevue, Washington, USA
-  timezone: America/Los_Angeles
-  link: https://mlsys.org/
-  deadline: "2026-10-30 12:00"
-  comment: Single submission deadline at NOON (12:00 PT); no separate abstract phase
-  tags: [ML]
-
-- name: VLDB
-  description: International Conference on Very Large Data Bases (PVLDB Vol. 20)
-  year: 2027
-  date: "August 23-27"
-  place: Athens, Greece
-  timezone: America/Los_Angeles
-  link: https://www.vldb.org/2027/important-dates.html
-  deadline:
-    - "2026-11-01 17:00"
-    - "2026-12-01 17:00"
-    - "2027-01-01 17:00"
-    - "2027-02-01 17:00"
-    - "2027-03-01 17:00"
-  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
-  tags: [DB, STOR]
 
 - name: SenSys
   description: ACM Conference on Embedded Networked Sensor Systems (Embedded AI and Sensing Systems)
@@ -65,7 +38,7 @@
   place: Atlanta, Georgia, USA
   link: https://iscaconf.org/isca2027/submit/callforpapers.php
   deadline: "2026-11-16 23:59"
-  comment: CFP now published; part of FCRC 2027, single round, abstract November 9 (AoE, 23:59)
+  comment: Main track; part of FCRC 2027, single round, abstract November 9 (AoE, 23:59). Industry track paper Dec 13
   tags: [ARCH]
 
 - name: ICPE
@@ -77,6 +50,21 @@
   deadline: "2026-11-16 23:59"
   comment: 18th ICPE; research track, abstract registration November 9 (AoE)
   tags: [PAR, MEAS]
+
+- name: VLDB
+  description: International Conference on Very Large Data Bases (PVLDB Vol. 20)
+  year: 2027
+  date: "August 23-27"
+  place: Athens, Greece
+  timezone: America/Los_Angeles
+  link: https://www.vldb.org/2027/important-dates.html
+  deadline:
+    - "2026-12-01 17:00"
+    - "2027-01-01 17:00"
+    - "2027-02-01 17:00"
+    - "2027-03-01 17:00"
+  comment: PVLDB Vol. 20 rolling monthly deadlines (1st of each month, 5pm PT, through March 2027); abstract due the 25th prior
+  tags: [DB, STOR]
 
 - name: CCGrid
   description: IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing
@@ -105,7 +93,7 @@
   place: Kyoto, Japan
   link: https://middleware-conf.github.io/2027/
   deadline: "2026-12-04 23:59"
-  comment: CFP now published; Winter cycle (Cycle 1), abstract November 27 (AoE). Summer cycle paper June 4, 2027
+  comment: Winter cycle (Cycle 1), abstract November 27 (AoE). Summer cycle paper June 4, 2027
   tags: [OS, NET]
 
 - name: ICS
@@ -128,6 +116,16 @@
   deadline: "2026-12-08 17:59"
   comment: Abstract registration December 1; deadline stated 5:59pm EST. Single cycle (firm, no extensions)
   tags: [OS]
+
+- name: ISPASS
+  description: IEEE International Symposium on Performance Analysis of Systems and Software
+  year: 2027
+  date: "May 9-11"
+  place: New York, New York, USA
+  link: https://ispass.org/2027/cfp/
+  deadline: "2026-12-18 23:59"
+  comment: CFP now published; full paper December 18, abstract (required) December 11 (AoE)
+  tags: [MEAS, ARCH]
 
 - name: SIGMETRICS
   description: ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems
@@ -160,6 +158,15 @@
   tags: [NET]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
+
+- name: MLSys
+  description: Conference on Machine Learning and Systems
+  year: 2028
+  date: TBA
+  link: https://mlsys.org/
+  deadline: TBA
+  comment: MLSys 2027 paper deadline (October 30, 2026, noon PT) has passed; MLSys 2028 CFP not yet released (expect ~October 2027, single deadline at noon PT, no separate abstract)
+  tags: [ML]
 
 - name: IPDPS
   description: IEEE International Parallel and Distributed Processing Symposium
@@ -207,15 +214,6 @@
   deadline: TBA
   comment: Both NSDI '27 cycles closed (Fall paper Sep 17, 2026 was last); NSDI '28 CFP not yet released (expect Spring cycle ~late April 2027, 11:59pm US Eastern)
   tags: [NET]
-
-- name: ISPASS
-  description: IEEE International Symposium on Performance Analysis of Systems and Software
-  year: 2027
-  date: TBA
-  link: https://ispass.org/
-  deadline: TBA
-  comment: CFP not yet released; ISPASS 2026 full-paper deadline was December 12, 2025 (expect ~December 2026)
-  tags: [MEAS, ARCH]
 
 - name: MICRO
   description: IEEE/ACM International Symposium on Microarchitecture
