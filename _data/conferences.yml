@@ -1,6 +1,6 @@
 ---
 # Computer systems research conference deadlines
-# Last refreshed: 2026-11-03
+# Last refreshed: 2026-11-10
 #
 # Format notes (see README.md):
 #   - deadline: "YYYY-MM-DD HH:MM" (24h). Use "TBA" when the next CFP is unpublished.
@@ -10,16 +10,6 @@
 #
 
 # --- Confirmed upcoming deadlines ---
-
-- name: SenSys
-  description: ACM Conference on Embedded Networked Sensor Systems (Embedded AI and Sensing Systems)
-  year: 2027
-  date: "May 17-20"
-  place: Boulder, Colorado, USA
-  link: https://sensys.acm.org/2027/
-  deadline: "2026-11-05 23:59"
-  comment: Cycle 2 (Cycle 1 closed); abstract October 29 (AoE). Now merged with IPSN and IoTDI
-  tags: [MOBILE, EMB, NET]
 
 - name: PLDI
   description: ACM SIGPLAN Conference on Programming Language Design and Implementation
@@ -158,6 +148,15 @@
   tags: [NET]
 
 # --- Awaiting next CFP (deadline TBA; weekly refresh will fill these in) ---
+
+- name: SenSys
+  description: ACM Conference on Embedded Networked Sensor Systems (Embedded AI and Sensing Systems)
+  year: 2028
+  date: TBA
+  link: https://sensys.acm.org/
+  deadline: TBA
+  comment: Both SenSys 2027 cycles closed (second deadline Nov 5, 2026 was last; SenSys 2027 is May 17-20, 2027, Boulder, CO, co-located with CPS-IoT Week); SenSys 2028 CFP not yet released (expect first cycle ~June 2027, AoE). Merged with IPSN and IoTDI
+  tags: [MOBILE, EMB, NET]
 
 - name: MLSys
   description: Conference on Machine Learning and Systems
